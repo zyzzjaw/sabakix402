@@ -98,7 +98,9 @@ export default function Home() {
       addLog(`Initiating ${config.label} payment...`, "info");
 
       const normalizedFetch = createNormalizedFetch(AVALANCHE_FUJI_CHAIN_ID);
-      const fetchWithPay = wrapFetchWithPayment(normalizedFetch, client, wallet, config.price);
+      const fetchWithPay = wrapFetchWithPayment(normalizedFetch, client, wallet, {
+        maxValue: config.price,
+      });
 
       addLog("Requesting payment authorization...", "info");
       const response = await fetchWithPay(config.endpoint);
