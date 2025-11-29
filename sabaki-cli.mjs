@@ -135,11 +135,17 @@ const main = async () => {
   const base = (process.env.CLI_API_BASE_URL || process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000").replace(/\/+$/, "");
   const endpoint = `${base}${RESOURCE_MAP[resource].endpoint}`;
 
-  const client = createThirdwebClient(
-    secretKey
-      ? { secretKey }
-      : { clientId: clientId! },
-  );
+  let clientConfig;
+  if (secretKey) {
+    clientConfig = { secretKey };
+  } else if (clientId) {
+    clientConfig = { clientId };
+  } else {
+    console.error("Thirdweb client credentials missing.");
+    process.exit(1);
+  }
+
+  const client = createThirdwebClient(clientConfig);
 
   const account = privateKeyToAccount({
     client,
