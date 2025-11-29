@@ -1,5 +1,5 @@
 import { createThirdwebClient } from "thirdweb";
-import { settlePayment, facilitator } from "thirdweb/x402";
+import { facilitator, settlePayment } from "thirdweb/x402";
 import { avalancheFuji } from "thirdweb/chains";
 import { USDC_FUJI_ADDRESS } from "@/lib/constants";
 
@@ -9,14 +9,61 @@ type FactConfig = {
   priceAmount: string;
 };
 
-const client = createThirdwebClient({
-  secretKey: process.env.THIRDWEB_SECRET_KEY!,
-});
+class EnvVarMissingError extends Error {
+  constructor(readonly missing: string[]) {
+    super(`Missing required environment variables: ${missing.join(", ")}`);
+    this.name = "EnvVarMissingError";
+  }
+}
 
-const thirdwebFacilitator = facilitator({
-  client,
-  serverWalletAddress: process.env.THIRDWEB_SERVER_WALLET_ADDRESS!,
-});
+let cachedFacilitator: ReturnType<typeof facilitator> | null = null;
+
+const ensureFacilitator = () => {
+  if (cachedFacilitator) return cachedFacilitator;
+
+  const missing: string[] = [];
+  const secretKey = process.env.THIRDWEB_SECRET_KEY;
+  const serverWallet = process.env.THIRDWEB_SERVER_WALLET_ADDRESS;
+
+  if (!secretKey) missing.push("THIRDWEB_SECRET_KEY");
+  if (!serverWallet) missing.push("THIRDWEB_SERVER_WALLET_ADDRESS");
+
+  if (missing.length) {
+    throw new EnvVarMissingError(missing);
+  }
+
+  const safeSecretKey = secretKey as string;
+  const safeServerWallet = serverWallet as string;
+
+  const client = createThirdwebClient({ secretKey: safeSecretKey });
+  cachedFacilitator = facilitator({
+    client,
+    serverWalletAddress: safeServerWallet,
+  });
+
+  return cachedFacilitator;
+};
+
+const ensureMerchantWallet = () => {
+  const merchant = process.env.MERCHANT_WALLET_ADDRESS;
+  if (!merchant) throw new EnvVarMissingError(["MERCHANT_WALLET_ADDRESS"]);
+  return merchant;
+};
+
+const misconfiguredResponse = (missing: string[]) =>
+  new Response(
+    JSON.stringify({
+      error: "Server misconfiguration",
+      missingEnv: missing,
+    }),
+    {
+      status: 500,
+      headers: {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-store",
+      },
+    },
+  );
 
 const mergeSearchParams = (upstreamUrl: string, requestUrl: string) => {
   const upstream = new URL(upstreamUrl);
@@ -29,6 +76,18 @@ const mergeSearchParams = (upstreamUrl: string, requestUrl: string) => {
 
 export function createFactHandler(config: FactConfig) {
   return async function handler(request: Request) {
+    let facilitatorInstance: ReturnType<typeof facilitator>;
+    let merchantWallet: string;
+    try {
+      facilitatorInstance = ensureFacilitator();
+      merchantWallet = ensureMerchantWallet();
+    } catch (err) {
+      if (err instanceof EnvVarMissingError) {
+        return misconfiguredResponse(err.missing);
+      }
+      throw err;
+    }
+
     const paymentData =
       request.headers.get("x-payment") ?? request.headers.get("X-PAYMENT");
 
@@ -38,7 +97,7 @@ export function createFactHandler(config: FactConfig) {
       resourceUrl: upstreamUrl,
       method: request.method,
       paymentData,
-      payTo: process.env.MERCHANT_WALLET_ADDRESS!,
+      payTo: merchantWallet,
       network: avalancheFuji,
       price: {
         amount: config.priceAmount,
@@ -46,7 +105,7 @@ export function createFactHandler(config: FactConfig) {
           address: USDC_FUJI_ADDRESS,
         },
       },
-      facilitator: thirdwebFacilitator,
+      facilitator: facilitatorInstance,
     });
 
     if (result.status !== 200) {
