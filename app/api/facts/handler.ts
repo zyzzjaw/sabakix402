@@ -1,5 +1,5 @@
 import { createThirdwebClient } from "thirdweb";
-import { facilitator, settlePayment } from "thirdweb/x402";
+import { settlePayment, facilitator } from "thirdweb/x402";
 import { avalancheFuji } from "thirdweb/chains";
 import { USDC_FUJI_ADDRESS } from "@/lib/constants";
 
@@ -46,24 +46,24 @@ const ensureFacilitator = () => {
 
 const ensureMerchantWallet = () => {
   const merchant = process.env.MERCHANT_WALLET_ADDRESS;
-  if (!merchant) throw new EnvVarMissingError(["MERCHANT_WALLET_ADDRESS"]);
+  if (!merchant) {
+    throw new EnvVarMissingError(["MERCHANT_WALLET_ADDRESS"]);
+  }
   return merchant;
 };
 
-const misconfiguredResponse = (missing: string[]) =>
-  new Response(
+const misconfiguredResponse = (missing: string[]) => {
+  return new Response(
     JSON.stringify({
       error: "Server misconfiguration",
       missingEnv: missing,
     }),
     {
       status: 500,
-      headers: {
-        "Content-Type": "application/json",
-        "Cache-Control": "no-store",
-      },
+      headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
     },
   );
+};
 
 const mergeSearchParams = (upstreamUrl: string, requestUrl: string) => {
   const upstream = new URL(upstreamUrl);
@@ -82,9 +82,6 @@ export function createFactHandler(config: FactConfig) {
       facilitatorInstance = ensureFacilitator();
       merchantWallet = ensureMerchantWallet();
     } catch (err) {
-      if (err instanceof EnvVarMissingError) {
-        return misconfiguredResponse(err.missing);
-      }
       throw err;
     }
 
