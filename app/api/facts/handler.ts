@@ -82,6 +82,9 @@ export function createFactHandler(config: FactConfig) {
       facilitatorInstance = ensureFacilitator();
       merchantWallet = ensureMerchantWallet();
     } catch (err) {
+      if (err instanceof EnvVarMissingError) {
+        return misconfiguredResponse(err.missing);
+      }
       throw err;
     }
 
