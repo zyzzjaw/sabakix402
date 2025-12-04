@@ -9,7 +9,7 @@ type FactConfig = {
   priceAmount: string;
 };
 
-class EnvVarMissingError extends Error {
+export class EnvVarMissingError extends Error {
   constructor(readonly missing: string[]) {
     super(`Missing required environment variables: ${missing.join(", ")}`);
     this.name = "EnvVarMissingError";
@@ -18,7 +18,7 @@ class EnvVarMissingError extends Error {
 
 let cachedFacilitator: ReturnType<typeof facilitator> | null = null;
 
-const ensureFacilitator = () => {
+export const ensureFacilitator = () => {
   if (cachedFacilitator) return cachedFacilitator;
 
   const missing: string[] = [];
@@ -44,7 +44,7 @@ const ensureFacilitator = () => {
   return cachedFacilitator;
 };
 
-const ensureMerchantWallet = () => {
+export const ensureMerchantWallet = () => {
   const merchant = process.env.MERCHANT_WALLET_ADDRESS;
   if (!merchant) {
     throw new EnvVarMissingError(["MERCHANT_WALLET_ADDRESS"]);
@@ -52,7 +52,7 @@ const ensureMerchantWallet = () => {
   return merchant;
 };
 
-const misconfiguredResponse = (missing: string[]) => {
+export const misconfiguredResponse = (missing: string[]) => {
   return new Response(
     JSON.stringify({
       error: "Server misconfiguration",
