@@ -7,9 +7,7 @@ export const DEFAULT_RPC_URL =
 export const SP500_ORACLE_ADDRESS = (process.env.SP500_ORACLE_ADDR ??
   "0xA17b8A538286f0415e0a5166440f0E452BF35968") as Hex;
 
-type OracleAbi = typeof SP500_ORACLE_ABI;
-
-const clientCache = new Map<string, ReturnType<typeof createPublicClient<OracleAbi>>>();
+const clientCache = new Map<string, ReturnType<typeof createPublicClient>>();
 
 function getClient(rpcUrl: string = DEFAULT_RPC_URL) {
   if (!clientCache.has(rpcUrl)) {
@@ -46,6 +44,18 @@ export function toBytes32(value: string): Hex {
   return keccak256(stringToBytes(value));
 }
 
+type RawAttestation = {
+  periodId: Hex;
+  metricId: Hex;
+  evidenceHash: Hex;
+  urlHash: Hex;
+  value: bigint;
+  observedAt: bigint;
+  decimals: number;
+  sourceType: number;
+  lastUpdated: bigint;
+};
+
 export async function readAttestation(opts: {
   ticker: string;
   periodId: Hex;
@@ -62,12 +72,12 @@ export async function readAttestation(opts: {
   } = opts;
   const client = getClient(rpcUrl);
   try {
-    const result = await client.readContract({
+    const result = (await client.readContract({
       address: oracleAddress,
       abi: SP500_ORACLE_ABI,
       functionName: "getAttestation",
       args: [ticker, periodId, metricId],
-    });
+    })) as RawAttestation;
 
     if (!result) return null;
 
