@@ -23,7 +23,12 @@
       "description": "Operational contact"
     }
   ],
-  "registrations": [],
+  "registrations": [
+    {
+      "agentId": 1,
+      "agentRegistry": "eip155:43113:0x947B58885eee5f47C12a1B4320fFc7DC34aC6652"
+    }
+  ],
   "supportedTrust": [
     "validation",
     "crypto-economic"
