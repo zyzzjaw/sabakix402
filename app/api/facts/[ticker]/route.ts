@@ -17,7 +17,10 @@ const ALLOW_UNPAID = process.env.ALLOW_UNPAID_FACTS === "true";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(request: NextRequest, context: any) {
+export async function GET(
+  request: NextRequest,
+  { params }: { params: { ticker: string } },
+) {
   let facilitatorInstance: ReturnType<typeof ensureFacilitator>;
   let merchantWallet: string;
   try {
@@ -30,9 +33,7 @@ export async function GET(request: NextRequest, context: any) {
     throw err;
   }
 
-  const ticker = context?.params?.ticker
-    ? String(context.params.ticker).toUpperCase()
-    : undefined;
+  const ticker = params.ticker?.toUpperCase();
   if (!ticker) {
     return NextResponse.json({ error: "missing_ticker_param" }, { status: 400 });
   }
@@ -110,6 +111,13 @@ export async function GET(request: NextRequest, context: any) {
     }),
   ]);
 
+  const serializedOnchainNonGaap = onchainNonGaap
+    ? { ...onchainNonGaap, value: onchainNonGaap.value.toString() }
+    : null;
+  const serializedOnchainConsensus = onchainConsensus
+    ? { ...onchainConsensus, value: onchainConsensus.value.toString() }
+    : null;
+
   const nowIso = new Date().toISOString();
 
   const basePayload: Record<string, unknown> = {
@@ -130,9 +138,9 @@ export async function GET(request: NextRequest, context: any) {
     attestation: {
       contract: SP500_ORACLE_ADDRESS,
       ledger: record.attestation,
-      on_chain: Boolean(onchainNonGaap) || Boolean(onchainConsensus),
-      on_chain_non_gaap: onchainNonGaap,
-      on_chain_consensus: onchainConsensus,
+      on_chain: Boolean(serializedOnchainNonGaap) || Boolean(serializedOnchainConsensus),
+      on_chain_non_gaap: serializedOnchainNonGaap,
+      on_chain_consensus: serializedOnchainConsensus,
     },
     cache_generated_at: cache.meta.generated_at,
     generated_at: nowIso,
