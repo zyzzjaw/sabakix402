@@ -31,3 +31,5 @@ export const PAYMENT_AMOUNTS = {
     bigInt: BigInt(150000),
   },
 } as const;
+
+export const FACT_PRICE_AMOUNT = process.env.FACT_PRICE_AMOUNT || "250000";

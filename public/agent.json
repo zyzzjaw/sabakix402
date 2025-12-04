@@ -1,0 +1,37 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "Sabaki EPS Fact Agent",
+  "description": "Paid EPS fact bundles with Fuji attestation hashes, Polymarket mapping, and x402 machine-native payments.",
+  "image": "https://sabaki.ai/assets/sabaki-agent.png",
+  "endpoints": [
+    {
+      "name": "x402-facts",
+      "endpoint": "https://sabaki.ai/api/facts/{ticker}",
+      "version": "1.0.0"
+    },
+    {
+      "name": "SP500Oracle",
+      "endpoint": "eip155:43113:0xA17b8A538286f0415e0a5166440f0E452BF35968",
+      "version": "v1"
+    },
+    {
+      "name": "support",
+      "endpoint": "mailto:data@sabaki.ai",
+      "version": "v1"
+    }
+  ],
+  "registrations": [],
+  "supportedTrust": [
+    "validation",
+    "crypto-economic"
+  ],
+  "payment": {
+    "network": "solana:8E9r...replace...",
+    "facilitator": "SoL...replace...",
+    "price": {
+      "amount": "0.25",
+      "asset": "SOL"
+    }
+  }
+}
+

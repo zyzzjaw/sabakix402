@@ -1,0 +1,2836 @@
+{
+  "meta": {
+    "generated_at": "2025-12-04T02:16:17.266Z",
+    "source": "/home/dude/oracle/attestations_posted.jsonl"
+  },
+  "facts": {
+    "MLKN::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MLKN",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x97f2883c074d7fe8817e900085c199b9129fe99f47508f8ad34fe6bd5eed750f",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.45,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.34,
+      "pm_market_url": "https://polymarket.com/event/will-mlkn-beat-earnings-estimate-2025-09-23-0pt34",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/66382/000006638225000106/0000066382-25-000106-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/66382/000006638225000106/mlkn8k_08302025ex991.htm",
+        "dedupe_id": "dff4228f6a4f51f2293ba5c9da3f22cc226c2fda7b61679e99dabf41d572fdba",
+        "updated": "2025-09-23T16:08:24-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x072e73bcf84727555680d62b73b067fe9ef4cba4757bc2032c9a34b05a4960d6",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "MU::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MU",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xea7fe6b99436d1c2bfcea4d32606073356300ec2d4ecf9c08796366c2b86e157",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 3.03,
+      "consensus_eps": 1.08,
+      "pm_consensus_eps": 2.85,
+      "pm_market_url": "https://polymarket.com/event/will-mu-beat-earnings-estimate-2025-09-23-2pt85",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000024/0000723125-25-000024-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000024/a2025q4ex991-pressrelease.htm",
+        "dedupe_id": "0bb59b34e8d79bfc4c37e2ec0bdeaff0533b25445a5c8da3f29b9d42f6cbf6d5",
+        "updated": "2025-09-23T16:02:28-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6799f92ef397a9f2b12df8ad8e7dcd81f5dbac567f41b966c5a964be6277f230",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CNXC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CNXC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x63e0567b253718b4ae01ae007bebf769e57f26f6073e1b51980b3b9c629bf773",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.78,
+      "consensus_eps": 0,
+      "pm_consensus_eps": 2.91,
+      "pm_market_url": "https://polymarket.com/event/will-cnxc-beat-earnings-estimate-2025-09-25-2pt91",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1803599/000180359925000143/0001803599-25-000143-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1803599/000180359925000143/exhibit991q32025.htm",
+        "dedupe_id": "a951f4ea8b872959477392f23b108912cb1c903f8f1cc2700dd6a5df2d952c2d",
+        "updated": "2025-09-25T16:08:31-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x9367067f057b3fa47f1709d07c972343345ac746d58628df501af6e0808ddd09",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "JBL::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "JBL",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x216d4829b75f029842828fab76c0a211164d203fbf466cf6bbe860cd26773d35",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 3.29,
+      "consensus_eps": 2.45,
+      "pm_consensus_eps": 2.09,
+      "pm_market_url": "https://polymarket.com/event/will-jbl-beat-earnings-estimate-2025-09-25-2pt9",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/898293/000162828025042693/0001628280-25-042693-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/898293/000162828025042693/jbl-20250925ex991.htm",
+        "dedupe_id": "c02480d6a7e07471722152d645db86c40420244c5909603f6156f93b3ec60b3c",
+        "updated": "2025-09-25T07:31:47-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x8c62ad6b69f7b2c1a6c7d29829c7eddf2d04c9d69a094ca6f189cbddc16fd604",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PRGS::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PRGS",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x619e7581f15777587b537d396cba092a79f67067ab9d7d25f5d589c83f6895a9",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.5,
+      "consensus_eps": null,
+      "pm_consensus_eps": 1.03,
+      "pm_market_url": "https://polymarket.com/event/will-prgs-beat-earnings-estimate-2025-09-29-1pt3",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/876167/000087616725000142/0000876167-25-000142-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/876167/000087616725000142/exhibit991-q32025earningsr.htm",
+        "dedupe_id": "c42d2b5edf86c8ee2551ab17bd86f294ab145dd855f944a0f3931892af33f304",
+        "updated": "2025-09-29T16:04:21-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x30a78d3049392d898bc8d64ea766e695ea2d923ed426d6f517dbf801258ca018",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "STZ::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "STZ",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xef7ba5f924332c5e45cb7fa4cc21a6e66ceabd73d9acf0b36d9319a553df0059",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 11.3,
+      "consensus_eps": 3.45,
+      "pm_consensus_eps": 3.44,
+      "pm_market_url": "https://polymarket.com/event/stz-quarterly-earnings-nongaap-eps-2025-10-06-3pt44",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/16918/000001691825000132/0000016918-25-000132-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/16918/000001691825000132/stzex991_922025guidanceupd.htm",
+        "dedupe_id": "04b00d6b49916340f7656e14a80c23997126037fe569214ac62c5f773247b25a",
+        "updated": "2025-09-02T07:38:55-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x78d87de694c72386f4636c908fbf76ccc315055b1e82c80c66717d707dbf7b11",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PENG::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PENG",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x12a72e00ff67785576cffcc077a421a663b09418e8ac46f9f5f447ab6bcce5a2",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.47,
+      "consensus_eps": 0.55,
+      "pm_consensus_eps": 0.37,
+      "pm_market_url": "https://polymarket.com/event/peng-quarterly-earnings-nongaap-eps-2025-10-07-0pt37",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1616533/000161653325000057/0001616533-25-000057-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1616533/000161653325000057/pengq4-25form8xkxex991.htm",
+        "dedupe_id": "caf763ecb091e741c1d57629502beec1b1c18abd3036af518f1ac824455ac990",
+        "updated": "2025-10-07T16:09:25-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x9f0c650b247b1e90f07ebc924b2d4287da5e3b9dc19682a41f31ea56ccfd2e47",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "AZZ::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "AZZ",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x58eee2d4c898eee3556db7ec3642e0304ef46d40974b3800cd83b544e57dc8fd",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.55,
+      "consensus_eps": null,
+      "pm_consensus_eps": 1.57,
+      "pm_market_url": "https://polymarket.com/event/azz-quarterly-earnings-nongaap-eps-2025-10-08-1pt57",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/8947/000000894725000194/0000008947-25-000194-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/8947/000000894725000194/exhibit991q2fy26earningsre.htm",
+        "dedupe_id": "9fcbc8a9dffcd408ec17e08828c28ef651b1acd0b44b5b885809b324e5aee10e",
+        "updated": "2025-10-08T16:13:47-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x702ed118b8c92a7e931a7bb82fec2f8ae273312605097fbad625857f0c343b1a",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "RELL::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "RELL",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x35099d7fb05d66924c1b386ff6496448923d826bcf2e0b7686dc87628b2cd44c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.13,
+      "consensus_eps": 0.45,
+      "pm_consensus_eps": -0.01,
+      "pm_market_url": "https://polymarket.com/event/rell-quarterly-earnings-nongaap-eps-2025-10-08-neg0pt01",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/355948/000119312525234574/0001193125-25-234574-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/355948/000119312525234574/rell-ex99_1.htm",
+        "dedupe_id": "f91037b71154bb66eb8b5c866a02200e2975087b59a3e9909ad4e806c5a2e62b",
+        "updated": "2025-10-08T16:37:44-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x9d3e558449d1908a3a58f0f7227acda9d046ea0500c3bb6b1e24b5f724b56abd",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "HELE::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "HELE",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x5d87d6c4fad36c5067917b51d90e35cad6a29aceafd9322561d5e88557c2e52c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.55,
+      "consensus_eps": 2.25,
+      "pm_consensus_eps": 0.52,
+      "pm_market_url": "https://polymarket.com/event/hele-quarterly-earnings-nongaap-eps-2025-10-09-0pt52",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/916789/000091678925000096/0000916789-25-000096-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/916789/000091678925000096/fy26_q2xex-991.htm",
+        "dedupe_id": "e7f0c4743d4dc0807801503c0f09228521b545350347fb63b3c9156736ce9017",
+        "updated": "2025-10-09T06:50:15-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x56ac895d8c055c5bb22e0f312628e7895fd43119a0c90f9421b789766055fbfa",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "LEVI::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "LEVI",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xf63077411b53b60cf35ac94c3719a70a4d28ebc4cc6dddf34c7f89d1ac78a69d",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.34,
+      "consensus_eps": 0.38,
+      "pm_consensus_eps": 0.3,
+      "pm_market_url": "https://polymarket.com/event/levi-quarterly-earnings-nongaap-eps-2025-10-09-0pt30",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/94845/000009484525000051/0000094845-25-000051-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/94845/000009484525000051/exhibit991-3q2025pressrele.htm",
+        "dedupe_id": "44ca5310f82cb91e3415b54d4c7466af277cd09cc1495fda2e31cab6c354095b",
+        "updated": "2025-10-09T16:18:14-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xdac1270b2a055bc4a9c73441d6471feedd8350df661d93b05b5b24483ff81f24",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "NEOG::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "NEOG",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x8ad5ea9ac258e83726c332c2d3b92527e2d7deef3a97806426e89389dee2d451",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.04,
+      "consensus_eps": 0.48,
+      "pm_consensus_eps": 0.04,
+      "pm_market_url": "https://polymarket.com/event/neog-quarterly-earnings-nongaap-eps-2025-10-09-0pt04",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/711377/000119312525235081/0001193125-25-235081-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/711377/000119312525235081/neog-ex99_1.htm",
+        "dedupe_id": "af4709a4f232976c24c582074c837aa6c331a8aeacf5b5841fbd6bf9a807aea9",
+        "updated": "2025-10-09T07:02:24-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6e0ed6d2ec64e84eb381ae30d43dbc7386bc8d90a6edc22ea49b996b0d971233",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PEP::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PEP",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x9137b176ffa42a0ef7355376d8da8c5d5aab10ed7ef6039a689b3863ef0b0d58",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.29,
+      "consensus_eps": 2.35,
+      "pm_consensus_eps": 2.26,
+      "pm_market_url": "https://polymarket.com/event/pep-quarterly-earnings-nongaap-eps-2025-10-09-2pt26",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000055/0000077476-25-000055-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000055/q320258-kxexhibit991.htm",
+        "dedupe_id": "a578b77e2d2af73fe83ffceb94d47ac038c27823037d656d00afffdf22f13bdd",
+        "updated": "2025-10-08T19:16:09-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4a42e94303c7daa3d55b9a006f97f431ae6c13ecff3d880fc6b8f369d53e1fbb",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "BLK::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "BLK",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xea15f0b04b25f7abbb9f8ee386546c9618d3aff87813b4d207538cf3ebe7d24a",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 11.55,
+      "consensus_eps": 42.5,
+      "pm_consensus_eps": 11.76,
+      "pm_market_url": "https://polymarket.com/event/blk-quarterly-earnings-nongaap-eps-2025-10-14-11pt76",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312525237960/0001193125-25-237960-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312525237960/blk-ex99_1.htm",
+        "dedupe_id": "5865a8f41e419e8bb6536f47a083a5507a343771618d36799b675bc3876b17e8",
+        "updated": "2025-10-14T06:38:14-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xd042f93bc4b1b0d16ca44b2c941fd4e1f2144f35b987795ab976ce93972d08f0",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "JNJ::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "JNJ",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x103bdc8d737654a90453ab1cf86b4f369b2859f91defa97f8145b7f6e7e69ac2",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.8,
+      "consensus_eps": 2.45,
+      "pm_consensus_eps": 2.75,
+      "pm_market_url": "https://polymarket.com/event/jnj-quarterly-earnings-nongaap-eps-2025-10-14-2pt75",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000201/0000200406-25-000201-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000201/a2025q3exhibit991.htm",
+        "dedupe_id": "52b629f74ae204630d23779c2af4a9679df70b3cd0d24f39a71fb2b80b29906c",
+        "updated": "2025-10-14T07:22:58-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x9c91a598f40eb99bf76beafd87e9066ae858104eed58e60127e5882ed2ae8d00",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "JPM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "JPM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x7c66dfce614e9a88c33dd01ffd47e917575e527015d5ead8069719869ba53f20",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 5.07,
+      "consensus_eps": 4.23,
+      "pm_consensus_eps": 4.72,
+      "pm_market_url": "https://polymarket.com/event/jpm-quarterly-earnings-gaap-eps-2025-10-14-4pt72",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828025044845/0001628280-25-044845-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828025044845/a3q25erfexhibit991narrative.htm",
+        "dedupe_id": "353d62c723147634e509d04876e6f0d1b1adaf0182f540130328ac5b96de8825",
+        "updated": "2025-10-14T06:30:57-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6778b195046e0cc457f34f6bb50f16a37540562eb0b3c09ea03209a46fac40bf",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "WFC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "WFC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xbcbea52eddbd6f06d42801bc7211b3a65481cb1760451b3fd9b333d7cbe932ba",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.73,
+      "consensus_eps": 1.4,
+      "pm_consensus_eps": 1.53,
+      "pm_market_url": "https://polymarket.com/event/wfc-quarterly-earnings-gaap-eps-2025-10-14-1pt53",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/000007297125000239/0000072971-25-000239-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/72971/000007297125000239/wfc3qer10-14x25ex991xrelea.htm",
+        "dedupe_id": "cf49c048255f8f0af89bfdb31bc78bfa3c753090082fb2255632c395f2fea7df",
+        "updated": "2025-10-14T06:28:31-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x430015a15cde4f331bf38e3f9d23ea7261a627342f2516004845b2938a2dc74e",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "BAC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "BAC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xa445a035dba25d8a141a41de6cf7fe9d862622e55c2ea98b66fac0b31d9f6125",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.06,
+      "consensus_eps": 1.02,
+      "pm_consensus_eps": 0.93,
+      "pm_market_url": "https://polymarket.com/event/bac-quarterly-earnings-gaap-eps-2025-10-15-0pt93",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085825000390/0000070858-25-000390-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085825000390/bac093025ex991.htm",
+        "dedupe_id": "77a530c886786732e9f5d13c673662b7ffcbf18a744d28eaf7d274b2a3264031",
+        "updated": "2025-10-15T06:50:29-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6a3a16db601c0f3351188ea2b4c8d8fa43789c03adcbf4a5323e09416d07a8fc",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "BK::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "BK",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xc035ac7f4abdf17e06b1be2fb7add620e61ef401663bc56cc59d930dc8ef76f9",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.91,
+      "consensus_eps": null,
+      "pm_consensus_eps": 1.76,
+      "pm_market_url": "https://polymarket.com/event/bk-quarterly-earnings-gaap-eps-2025-10-16-1pt76",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1390777/000139077725000144/0001390777-25-000144-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1390777/000139077725000144/ex991_earningsreleasex3q25.htm",
+        "dedupe_id": "edc6669832d92c1fadf4c941ce3f825e478e0b3f9ea63f9cec4598fa3ee5c68f",
+        "updated": "2025-10-16T06:15:04-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x2df1c63f4b676c401dcdbed201fa7b7fbd9ca5a0e3249518294cb0c8f39ec59c",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "SCHW::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "SCHW",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xa364e2dab849898d695a0e7f07ca78bfedb52a56f2722da0ec3be399f83dc174",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.31,
+      "consensus_eps": 0.85,
+      "pm_consensus_eps": 1.21,
+      "pm_market_url": "https://polymarket.com/event/schw-quarterly-earnings-nongaap-eps-2025-10-16-1pt21",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/316709/000031670925000046/0000316709-25-000046-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/316709/000031670925000046/a3q25exhibit991.htm",
+        "dedupe_id": "7dcac03d317b26d63a409733de18cee6548f282c008b695cbf02c54eaec68698",
+        "updated": "2025-10-16T16:25:43-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x8712c34a9d6e7e388a921bc479b6617c0dbe99d4c388a701cf46ae348b1c977e",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "AXP::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "AXP",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x96d617e2439279b6bba827e24a1090ddf3e10c2f94e3104b5b947f2356fdca89",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 11.85,
+      "consensus_eps": 3.5,
+      "pm_consensus_eps": null,
+      "pm_market_url": "https://polymarket.com/event/axp-quarterly-earnings-gaap-eps-10-17-2025-4",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000218/0000004962-25-000218-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000218/q325exhibit991v2.htm",
+        "dedupe_id": "158f32ef0aaae9824078147059f5e3035205983e9ecc654da9ce15bf3a55859e",
+        "updated": "2025-10-17T07:00:35-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xc2307dd1f2c8dfe3ce1e7efc6d5a56aaba57c069854f8122f91a7cf29eb33f02",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "TFC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "TFC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x0e9ca912a517ede57d2dac6ca997f76a1db6f9556c1746c9d5d838adda4fbaa9",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.04,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.99,
+      "pm_market_url": "https://polymarket.com/event/tfc-quarterly-earnings-nongaap-eps-2025-10-17-0pt99",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/92230/000009223025000150/0000092230-25-000150-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/92230/000009223025000150/ex991-pr3q25.htm",
+        "dedupe_id": "a16434555d9d40cc4a376b5fd490d76072ace679c9b2fdc21982f1d36bc8c023",
+        "updated": "2025-10-17T06:30:51-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x503ebff2db169ee74c430b196854df8feca90e3289fba1b163e8589c2594c595",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CB::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CB",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xf95006aa3663cc8e3bd582fbf39ac42bd1b3e00e434f5d3ba4fe374b8527d29c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 7.49,
+      "consensus_eps": 5.15,
+      "pm_consensus_eps": 5.78,
+      "pm_market_url": "https://polymarket.com/event/cb-quarterly-earnings-nongaap-eps-10-21-2025-5pt78",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/896159/000119312525245172/0001193125-25-245172-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/896159/000119312525245172/d65750dex991.htm",
+        "dedupe_id": "a63ccc1d4c380b0aa2e2fb1466cbbe7ed1baaa56a0b62c9a66fc60ccf902b9d8",
+        "updated": "2025-10-21T16:19:22-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x3aecc31cdca93d5860d6b01b3c756b10d6631096fcbf713fd29be8f21fe56f0c",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "DGX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "DGX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x25520c30a8b670cc86e908eb308e308d59deda48274968f442fc618da7572f20",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.6,
+      "consensus_eps": 2.15,
+      "pm_consensus_eps": 2.05,
+      "pm_market_url": "https://polymarket.com/event/dgx-quarterly-earnings-nongaap-eps-10-21-2025-2pt5",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1022079/000102207925000219/0001022079-25-000219-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1022079/000102207925000219/dgx093020258-kex991.htm",
+        "dedupe_id": "3526a08a5a33042d5d794cb1b51cf681622749cbb6824ef7b4acbe88c97998de",
+        "updated": "2025-10-21T06:50:12-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xef83b0964604da0378ae2c11e8e081e40ee1a28681ab1360b803c924999ab2e3",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "EFX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "EFX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xe7dcf9e809c46063ecabe3d174e9aff10d1c8e3bb35d8b5a7489a408702c28af",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.04,
+      "consensus_eps": 1.75,
+      "pm_consensus_eps": 1.94,
+      "pm_market_url": "https://polymarket.com/event/efx-quarterly-earnings-nongaap-eps-2025-10-21-1pt94",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/33185/000003318525000061/0000033185-25-000061-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/33185/000003318525000061/exhibit99120250930.htm",
+        "dedupe_id": "d0f870e33e8608ec1814a326ba0405b8265ce15803f03f21b5ad2d59e7389b28",
+        "updated": "2025-10-21T06:32:18-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x18ac3ac974309ec94cf30660e2b72c24a8c02e0f06a2cf929b830972a41b687b",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "NDAQ::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "NDAQ",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x0ff36fab1ff7529aa7a4c90f9b3b6a3641cbac0a31b1412fedaf7285ff3e522f",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.88,
+      "consensus_eps": 1.45,
+      "pm_consensus_eps": 0.83,
+      "pm_market_url": "https://polymarket.com/event/ndaq-quarterly-earnings-nongaap-eps-10-21-2025-0pt83",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525244271/0001193125-25-244271-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525244271/d46597dex991.htm",
+        "dedupe_id": "ef42de6f7f166cfb6f0f76f954e6e20b2f369c68f3bcfce805835b090c29a3c0",
+        "updated": "2025-10-21T07:18:38-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x04692aeabf38b93b51f55c0e01938decb203f995ebc7504db787656771f0ff61",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "NFLX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "NFLX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x93524d81bcb78d74875943b3fa28cf64070d7736f6e1b17397c7ff43eaf73cfb",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 5.87,
+      "consensus_eps": 5.05,
+      "pm_consensus_eps": 6.95,
+      "pm_market_url": "https://polymarket.com/event/nflx-quarterly-earnings-nongaap-eps-10-21-2025-6pt95",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000404/0001065280-25-000404-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000404/ex991_q325.htm",
+        "dedupe_id": "6ea715ec376369a6fda2bcf1c25d9fb252ddf3eb20e2e10ce198060075b6f198",
+        "updated": "2025-10-21T16:02:25-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x2d392d3f8981b3b072d0507d0bd80f6a6638bf852ee345c80bebc4e9e27dea67",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x9ad735d6ba00c62c3c140904d7356961da24b1d2d98bbfb4bacb35bd61b6928c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.24,
+      "consensus_eps": 1.6,
+      "pm_consensus_eps": 2.01,
+      "pm_market_url": "https://polymarket.com/event/pm-quarterly-earnings-nongaap-eps-10-21-2025-2pt1",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025045579/0001628280-25-045579-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025045579/earningsreleasepm-ex991xq3.htm",
+        "dedupe_id": "01bf431a02db1c5a9e854403fa7f6a6b5460b82bbb76e43ad44fd1fc677c2143",
+        "updated": "2025-10-21T07:03:32-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x32332145c5d956031679b187ce3fedf4376de14cfd0daa01de94ba6223ffab0b",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CHDN::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CHDN",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x7cb789b01879a3b4efd6f63ca5ffb9d5f49f3a7625189b2f448188682f5dccfd",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.09,
+      "consensus_eps": 0.35,
+      "pm_consensus_eps": null,
+      "pm_market_url": "https://polymarket.com/event/chdn-quarterly-earnings-gaap-eps-10-22-2025-1",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/20212/000002021225000134/0000020212-25-000134-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/20212/000002021225000134/ex991pressrelease10-22x25.htm",
+        "dedupe_id": "e9769a90716fdf158292c45aa999abb6c75e5fd2f2eff65ad7e73b9b66ae38e9",
+        "updated": "2025-10-22T16:10:54-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xdfd3b0415d1381c2be023b73e1e9d64e747dd04e15013f6b10187643f02e862b",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CME::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CME",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xd3da4482ac122884995d8a4869865b47b423028f4ce0fdde2f3a5ad91bb7012c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.68,
+      "consensus_eps": null,
+      "pm_consensus_eps": 2.65,
+      "pm_market_url": "https://polymarket.com/event/cme-quarterly-earnings-nongaap-eps-10-22-2025-2pt65",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000204/0001156375-25-000204-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000204/exhibit9919302025.htm",
+        "dedupe_id": "31dc02cbeb5b60642ca237d03e629b1936b2a7cda45ed53726b53c886a3987a3",
+        "updated": "2025-10-22T07:05:05-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x726f157560b9f76c7bc968f23161c3799e223029be6668f72eaa8a74413ed377",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "IBM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "IBM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb8b3d89851b704ac5fb884f9c7d83bf6fe01a69903d1f881b83c0679eb6a27c6",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.65,
+      "consensus_eps": 2.48,
+      "pm_consensus_eps": 2.44,
+      "pm_market_url": "https://polymarket.com/event/ibm-quarterly-earnings-nongaap-eps-10-22-2025-2pt44",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114325000061/0000051143-25-000061-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114325000061/ibm-20251022xex991.htm",
+        "dedupe_id": "a8ef34cd8d56db11f4ea09b0509b2a265125801c54a4615e4e6866a79eef3878",
+        "updated": "2025-10-22T16:13:59-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x16a49c28aab9a92a0148886a07c7fa9c51dba5a7cb3ce7917201feca57ed125a",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "KMI::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "KMI",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xbb48775733907695b2e7d22f742839bfe34aae504f7e384906b2b466ab0777cb",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.29,
+      "consensus_eps": 0.33,
+      "pm_consensus_eps": 0.03,
+      "pm_market_url": "https://polymarket.com/event/kmi-quarterly-earnings-nongaap-eps-2025-10-15-0pt3",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630725000063/0001506307-25-000063-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630725000063/kmi2025q38-kex991.htm",
+        "dedupe_id": "25c3ac99d081c2d9fd8c7d2bf8cdd45157cacfffe7271e5d47eac604481f7dd8",
+        "updated": "2025-10-22T16:21:34-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x7177f75f4167abe2ad5ceb30551b2b91449e93e8622c3346f49060dfba3738aa",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "LVS::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "LVS",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x8d5406d1a6ec0be7eaaca0f0be4124b554cffe27b11723ab44904e685ea29f43",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.78,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.61,
+      "pm_market_url": "https://polymarket.com/event/lvs-quarterly-earnings-nongaap-eps-10-22-2025-0pt61",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1300514/000130051425000157/0001300514-25-000157-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1300514/000130051425000157/lvs_ex991x09302025.htm",
+        "dedupe_id": "93d421feecb62d607b367a9020e9a71bc6efd5abe30f938ff3fde4ad06214729",
+        "updated": "2025-10-22T16:10:30-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6b02572d4f06b1e6243125ee218ab1618c8d9554f67bb6e2d164a4d50d1d5d57",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "SEIC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "SEIC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x70fd7858eaf5d5e462ed175e278c1ac29e6171fcbddcb6e6d7f38270c5edaeca",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.3,
+      "consensus_eps": null,
+      "pm_consensus_eps": 1.26,
+      "pm_market_url": "https://polymarket.com/event/seic-quarterly-earnings-gaap-eps-10-22-2025-1pt26",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/350894/000035089425000113/0000350894-25-000113-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/350894/000035089425000113/seic-earningsreleaseex9911.htm",
+        "dedupe_id": "10305f4635bacc19db592c52575ba94487046b994046298880322e43cd747c8a",
+        "updated": "2025-10-22T16:02:39-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xd2abbd46916797bce1e3e46009bc0dbdb1a138ca0cb817721e2d92f5a4439af1",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "T::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "T",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x846b7b6deb1cfa110d0ea7ec6162a7123b761785528db70cceed5143183b11fc",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.54,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.54,
+      "pm_market_url": "https://polymarket.com/event/t-quarterly-earnings-nongaap-eps-10-22-2025-0pt54",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/732717/000073271725000163/0000732717-25-000163-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/732717/000073271725000163/t-3q2025exhibit991.htm",
+        "dedupe_id": "f61b2e0e0d61e27d12d6c2975a284fbdc00a400665fbc60ebd45ca2d4ab8a468",
+        "updated": "2025-10-22T06:35:30-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x096d315a1cd7534e17e95d81d167b7e5418458184e16dcc124229f591b37abf2",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "TSLA::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "TSLA",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x0a8f1f385fed9c77a2e0daa363ccc865e971bdbe4458bb570cc0acb068d7c0f2",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.5,
+      "consensus_eps": 1.15,
+      "pm_consensus_eps": 0.05,
+      "pm_market_url": "https://polymarket.com/event/tsla-quarterly-earnings-nongaap-eps-2025-10-22-0pt5",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/0001628280-25-045861-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm",
+        "dedupe_id": "d61f2861a2160b2fb5230594d94885e070407aac7a36dd2f0563d39b407d625c",
+        "updated": "2025-10-22T16:06:36-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6a9c04eb104c7c217fdbd70eb465cb7261a6757d0c8308fd9be39c9e18e99e16",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "BX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "BX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x6cad6af72efe09548a3ef36b2da314e32d97a0d40309a5fd1fdc02a8f5298f71",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.52,
+      "consensus_eps": 1.05,
+      "pm_consensus_eps": 1.23,
+      "pm_market_url": "https://polymarket.com/event/bx-quarterly-earnings-gaap-eps-10-23-2025-1pt23",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312525248907/0001193125-25-248907-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312525248907/d51239dex991.htm",
+        "dedupe_id": "b0a790c5b19b6dafc1b048ace94c23110828f119960a0240e28cd05501753c00",
+        "updated": "2025-10-23T17:15:14-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x7ee94a3fd3f514f6ccc417656aa25a091f63138953d0726bd88a95cd7fde02e3",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "HAS::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "HAS",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x9953a8bcbc35258aa203c1d69c9e99bf0ddf1fc135616925030b22e2efdb970b",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.68,
+      "consensus_eps": 0.5,
+      "pm_consensus_eps": 1.63,
+      "pm_market_url": "https://polymarket.com/event/has-quarterly-earnings-nongaap-eps-10-23-2025-1pt63",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/46080/000004608025000156/0000046080-25-000156-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/46080/000004608025000156/exhibit991q32025.htm",
+        "dedupe_id": "48ab6e68af9b8b450af2f003d27279d2dc799275108586882f08c202c80a35fa",
+        "updated": "2025-10-23T06:45:27-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xc87699ecaca37bb5bda38bae208eea5119e6dfcb8e6e009cd1cfffd3b27c6801",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "SSNC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "SSNC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xbcf2f2c9fa86442b97e6cac94c9e6f389e84e33be7c47b1307f9ecd5674a5b91",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.57,
+      "consensus_eps": 1.25,
+      "pm_consensus_eps": 1.47,
+      "pm_market_url": "https://polymarket.com/event/ssnc-quarterly-earnings-nongaap-eps-10-23-2025-1pt47",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1402436/000119312525248806/0001193125-25-248806-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1402436/000119312525248806/ssnc-ex99_1.htm",
+        "dedupe_id": "812b01c327a40db0fbfaefa274ed086ebb75b920d846e07dd0b8c61bee26ce52",
+        "updated": "2025-10-23T16:25:54-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xabd6f6850fda6bdadddedc71133b4dd5e24e57c8a7597f421d527ba66d362899",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "UNP::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "UNP",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x51376865520741375e66d875b6fba64d0353ef46357328f675386599d0eafafb",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 3.08,
+      "consensus_eps": null,
+      "pm_consensus_eps": 2.98,
+      "pm_market_url": "https://polymarket.com/event/unp-quarterly-earnings-gaap-eps-10-23-2025-2pt98",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/100885/000010088525000320/0000100885-25-000320-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/100885/000010088525000320/a2025-10x238xkex991earning.htm",
+        "dedupe_id": "56895a989a6750e0c39ccfac381dac1f1f10f0576cbd07424c424c9237fe4757",
+        "updated": "2025-10-23T07:47:12-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4983b1ca007e43a208df88330f3a23db77bb670ffb037cd9958b44e440f5e54a",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PG::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PG",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x32f4a45c4ab4135f1cbfea7dfa22df1989a156346650a361d0f3e86154a87127",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.99,
+      "consensus_eps": 0,
+      "pm_consensus_eps": 1.09,
+      "pm_market_url": "https://polymarket.com/event/pg-quarterly-earnings-nongaap-eps-10-24-2025-1pt9",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000240/0000080424-25-000240-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000240/fy2526q1jas8-kexhibit991.htm",
+        "dedupe_id": "cd9add61a326be961df7f76e63a90ecea8efe81115e81e38582452c42f388d30",
+        "updated": "2025-10-24T07:04:27-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xb09685cd70d934b1afdd641e846c18391df38d2e455e9779d70d68a74e7bc3cf",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "ARCC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "ARCC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x93df8af69a16ac520ddcd0c95b0ff80ded0c6bee3927081b7d1feaffe1a92db4",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.5,
+      "consensus_eps": 1.52,
+      "pm_consensus_eps": 0.05,
+      "pm_market_url": "https://polymarket.com/event/arcc-quarterly-earnings-nongaap-eps-10-28-2025-0pt5",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775025000044/0001287750-25-000044-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775025000044/arccq3-2025exhibit991.htm",
+        "dedupe_id": "c3f90ad12acfb3c00f0c8a0d2b09dfda114199a15318d1439b562d1459d31985",
+        "updated": "2025-10-27T20:29:59-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xfa90ff764e7cc863116dc9556edf0661ba8ab6bd9b00dba2a0b52d2a946b6e6e",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "LH::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "LH",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x42ec598c2e0cb7d5244b60a29b0c39ddd6a87f892de3a95faa8df1bc05769f37",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 4.18,
+      "consensus_eps": null,
+      "pm_consensus_eps": 4.14,
+      "pm_market_url": "https://polymarket.com/event/lh-quarterly-earnings-nongaap-eps-10-28-2025-4pt14",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/920148/000092014825000093/0000920148-25-000093-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/920148/000092014825000093/form8-kexhibit9913q25.htm",
+        "dedupe_id": "34c94101fa165b864c9baa277e684ff4b19b02fe3b40f149ce9bfc6f9261ac45",
+        "updated": "2025-10-28T06:55:29-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xebff994aab1b76e59662eb6af12fceaf312fa30d045f16d51662768e3e00afe7",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "MSCI::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MSCI",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x59e89020eaacc99cb7352bf5b1472dbeb3ba2f0dc027c93d5d513a4b94e9c062",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 4.47,
+      "consensus_eps": 3.45,
+      "pm_consensus_eps": 4.37,
+      "pm_market_url": "https://polymarket.com/event/msci-quarterly-earnings-nongaap-eps-10-28-2025-4pt37",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819825000194/0001408198-25-000194-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819825000194/exhibit991earningsrelease-.htm",
+        "dedupe_id": "1dc0c180ffca34d8d4d5dfcf1d3c9a96320207799e68f0b26298e5f2e28ed4d1",
+        "updated": "2025-10-28T06:46:17-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x9815ee11088d1fef84f4499e0bf8bef12ef0bd6e0e08b2fb5d9231a9a8bb86bd",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "UNH::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "UNH",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xddf839435a5d0d4d339e780fead8589e41d0f5c7a935c71a98cd33bbb1bfec30",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.92,
+      "consensus_eps": 7.05,
+      "pm_consensus_eps": 2.84,
+      "pm_market_url": "https://polymarket.com/event/unh-quarterly-earnings-nongaap-eps-10-28-2025-2pt84",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/731766/000073176625000301/0000731766-25-000301-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/731766/000073176625000301/a2025q3exhibit991.htm",
+        "dedupe_id": "34a94b2ff6d68b78399e523bca22b0ce85a542dc153927ac9c9855302f92af79",
+        "updated": "2025-10-28T06:02:08-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xfc89e4876251d6dd7a87f35f3a994a5d7353a2ac2cd9ab12fe3731a5e4a2b4e0",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "UPS::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "UPS",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x153e9d6ed89c96f0b6c224c0b032cce412fe0d65e70a3cdfb652fcde3c778a7f",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.74,
+      "consensus_eps": 0,
+      "pm_consensus_eps": 1.31,
+      "pm_market_url": "https://polymarket.com/event/ups-quarterly-earnings-nongaap-eps-10-28-2025-1pt31",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1090727/000162828025046550/0001628280-25-046550-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1090727/000162828025046550/exhibit991-earningspressre.htm",
+        "dedupe_id": "6ef0b454527568461c765328137b19862f5626328d1b773c15c06bfef610de61",
+        "updated": "2025-10-28T06:09:04-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xc4c675cd24502dc4054e36a61b6ff001668a0076dce2b5d3e4e081c4b7e2c3ba",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CAT::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CAT",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb13682e8142842d93ef9fba1f44e7fdd23f50e739d580f7a2118c0526ac3b815",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 4.95,
+      "consensus_eps": 5.5,
+      "pm_consensus_eps": 4.52,
+      "pm_market_url": "https://polymarket.com/event/cat-quarterly-earnings-nongaap-eps-10-29-2025-4pt52",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823025000043/0000018230-25-000043-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823025000043/ex991toformcat3q2025earnin.htm",
+        "dedupe_id": "79c8725b3e606164e239a4316d60939ada8cd1081ea3e305da559a3f65ed7bb2",
+        "updated": "2025-10-29T06:32:45-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x5cb35a91fd2b32204cd58b0056fa1b529c2beebbdc0223d7d22885cb50f315a0",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CMG::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CMG",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x5bb5436333f909c896a23c5ad84e1f5d4ed65d884f169568909b04d77038e12f",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.29,
+      "consensus_eps": 15.12,
+      "pm_consensus_eps": 0.29,
+      "pm_market_url": "https://polymarket.com/event/cmg-quarterly-earnings-nongaap-eps-10-29-2025-0pt29",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1058090/000105809025000086/0001058090-25-000086-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1058090/000105809025000086/cmg-20251029xex991.htm",
+        "dedupe_id": "edf54ed064a2220198f9a2000c1b3063d838d68db9554462646593b62d675846",
+        "updated": "2025-10-29T16:12:09-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xf1f353fa6f5dae436ee816d5d7bc0a413e3c959340590f8fb10114516705ecd8",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CVNA::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CVNA",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x49bc63c00c93f29a2224cf3d4bf7cc08d62e20124ff75fe07b7057c523e433cc",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.03,
+      "consensus_eps": null,
+      "pm_consensus_eps": 1.27,
+      "pm_market_url": "https://polymarket.com/event/cvna-quarterly-earnings-gaap-eps-10-29-2025-1pt27",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082025000352/0001690820-25-000352-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082025000352/ex99_1q32025.htm",
+        "dedupe_id": "a4700dd8535767c2c646f28ac9bdbef2d4b70eedae5b8209c03fb6901c410a42",
+        "updated": "2025-10-29T16:06:00-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x07abe2797e6ff902f731e582e02759bf07c1ffdf83d8dea4ad94691f9addfba0",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "EBAY::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "EBAY",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x972091c24533e6f6a125343c348088719c820c6bf6d6ead0e11043144ea8d568",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.36,
+      "consensus_eps": null,
+      "pm_consensus_eps": 1.33,
+      "pm_market_url": "https://polymarket.com/event/ebay-quarterly-earnings-nongaap-eps-10-29-2025-1pt33",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1065088/000106508825000124/0001065088-25-000124-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1065088/000106508825000124/exhibit991erebayq32025.htm",
+        "dedupe_id": "f812931b40b5789b17f9acfb7ab820360caf87e5682d58f679cab77682dd0474",
+        "updated": "2025-10-29T16:07:28-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xee1a9d553ecc8bda194bb7f064550589ba2d46e379c987da87f42cb0c67f0d0f",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "GRMN::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "GRMN",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xe8aa61b453af6f27775d95d064ccb765c934187284d62c2a11ecdb0461def4f2",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.99,
+      "consensus_eps": 1.75,
+      "pm_consensus_eps": 1.98,
+      "pm_market_url": "https://polymarket.com/event/grmn-quarterly-earnings-nongaap-eps-10-29-2025-1pt98",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1121788/000119312525254600/0001193125-25-254600-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1121788/000119312525254600/grmn-ex99_1.htm",
+        "dedupe_id": "fcf58e3e63d47ff4c37f74de097267c98ebe6af2ccf598d55cf818dd1f060c08",
+        "updated": "2025-10-29T07:00:28-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x7bff6dc394bfe65fe11583a6d3e292440fb9c3fe2eab81ec242e47c8daf09e84",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "KHC::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "KHC",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xf4124b9acd39697c945c77cf5826df4c2605545a329eb020d99bd1ea412e9aa0",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.61,
+      "consensus_eps": 0.77,
+      "pm_consensus_eps": 0.58,
+      "pm_market_url": "https://polymarket.com/event/khc-quarterly-earnings-nongaap-eps-10-29-2025-0pt58",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745925000164/0001637459-25-000164-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745925000164/ex991-erq32025.htm",
+        "dedupe_id": "eba802dfa70b810ea34c336f5ee6523df661d27cf18f82cc435c2f4c904cf330",
+        "updated": "2025-10-29T07:01:23-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x51de9f4306b838eced998386537bbe944e272f4c57eb77a01209fb10b23cb75d",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "META::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "META",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x0057355892fab25ddc63a7482ec1696d6ada670339b1ae464da8f6b958ddbee8",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 7.25,
+      "consensus_eps": 6.15,
+      "pm_consensus_eps": 6.72,
+      "pm_market_url": "https://polymarket.com/event/meta-quarterly-earnings-gaap-eps-10-29-2025-6pt72",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/0001628280-25-047114-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm",
+        "dedupe_id": "819b52ed72864191201deb9a92e45a31c282212e7b018530e122fcfde971ca34",
+        "updated": "2025-10-29T16:08:34-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xcbb321c78624671c2fa9c20da9614aff8c7f0f42b799d2a4a3b1b0ce43b30b28",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "MGM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MGM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb4bbf269414004dc145228f0d91675f1149e4d36a81677a1460f46c1585f80a5",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.24,
+      "consensus_eps": 1.45,
+      "pm_consensus_eps": 0.03,
+      "pm_market_url": "https://polymarket.com/event/mgm-quarterly-earnings-nongaap-eps-10-29-2025-0pt3",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/789570/000078957025000073/0000789570-25-000073-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789570/000078957025000073/mgmex991q32025earningrelea.htm",
+        "dedupe_id": "7f40377d33e8a5eac3b1c5a6b4d4d8070dccaf45eaf86e4fb55447f8883c494f",
+        "updated": "2025-10-29T16:15:51-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x0c1e71792f36c5fe2dccbc36500e622f878751996c74c59fba1dc00c5716e091",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "MSFT::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MSFT",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb2023082f01404dd0ce6937cab03c4f5d6db9ba8b1fac7e7ee6d8d6d899f4e3d",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 4.13,
+      "consensus_eps": 2.9,
+      "pm_consensus_eps": 3.66,
+      "pm_market_url": "https://polymarket.com/event/msft-quarterly-earnings-gaap-eps-10-29-2025-3pt66",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256310/0001193125-25-256310-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256310/msft-ex99_1.htm",
+        "dedupe_id": "feaac2aea9e24d2b043221291d2eddb85ebfe0036fb93ccd7e8bb198180fcf58",
+        "updated": "2025-10-29T16:07:42-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x2fcbf26bcbaff1a07b0319d1a8e5f8591de604e3192a60767dc06610d54b9a83",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PAG::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PAG",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x5860a6b6115131a89760df05748fb46f17a0a530794e4df58bcb594225ec4be9",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 10.39,
+      "consensus_eps": 4.05,
+      "pm_consensus_eps": 3.38,
+      "pm_market_url": "https://polymarket.com/event/pag-quarterly-earnings-gaap-eps-10-29-2025-3pt38",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1019849/000162828025047006/0001628280-25-047006-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1019849/000162828025047006/q325exhibit99_1.htm",
+        "dedupe_id": "da45cbe398916e4daebe7a087189cb83501e7caecb0048babdd06f7233bfb660",
+        "updated": "2025-10-29T12:11:03-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4fcb3761deb1973a417d8ad597ce83a2b66e5bd851d5df0566f2b90e49d08359",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "SBUX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "SBUX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xab3e63750ad2f82fed1c6f9100c816246dc696870b15d378143102e16b38bb7d",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.52,
+      "consensus_eps": 1.08,
+      "pm_consensus_eps": 0.51,
+      "pm_market_url": "https://polymarket.com/event/sbux-quarterly-earnings-gaap-eps-10-29-2025-0pt51",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000074/0000829224-25-000074-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000074/sbux-09282025xexhibit991.htm",
+        "dedupe_id": "79c1661c8689beb843b90dba5f7e25902f5ef283ccf56bfd6411155538bc12f7",
+        "updated": "2025-10-29T16:08:56-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xcf7289af3caddf6d363aa51fc9cdbb7dd4ef215312a0a3faa086f6c300619bb6",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "VIRT::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "VIRT",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xc1afee50a58b88be2c97e9c53bc3a961940cf746878689e8a4d3dcae20d19fb2",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.05,
+      "consensus_eps": 0.48,
+      "pm_consensus_eps": 0.95,
+      "pm_market_url": "https://polymarket.com/event/virt-quarterly-earnings-nongaap-eps-10-29-2025-0pt95",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238625000144/0001592386-25-000144-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238625000144/exhibit991q325.htm",
+        "dedupe_id": "b43e400a0406d8494eefb4556a7d95c23a31e8ad9906771e01ebcdde92c4126c",
+        "updated": "2025-10-29T07:15:29-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xec152023e34a951bda0574186f71a2ff6ee4c9ae0ddf3bde4138a8f843394d68",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "AAPL::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "AAPL",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x3a54a9a690616fbc26cfc409bf11f89d51f1d57a4ab2791fb86026cee74ed2f3",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.85,
+      "consensus_eps": 1.42,
+      "pm_consensus_eps": 1.76,
+      "pm_market_url": "https://polymarket.com/event/aapl-quarterly-earnings-gaap-eps-10-30-2025-1pt76",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000077/0000320193-25-000077-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000077/a8-kex991q4202509272025.htm",
+        "dedupe_id": "cfaa867c58faaaa65b4f03b8d8919728493e956fccf9dffc4f747dae1b5c6023",
+        "updated": "2025-10-30T16:30:35-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xab0db480843011d2bb88dda44ff2346c449139f8525d6ea9155419380d661922",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "EL::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "EL",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb4e4565775db87cb3b9498fb999e4dbd0e93031e86bc8c77b81df87e490bda15",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.32,
+      "consensus_eps": 1.23,
+      "pm_consensus_eps": 0.17,
+      "pm_market_url": "https://polymarket.com/event/el-quarterly-earnings-nongaap-eps-10-30-2025-0pt17",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1001250/000100125025000107/0001001250-25-000107-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1001250/000100125025000107/fy2026q1exhibit991.htm",
+        "dedupe_id": "6a7e16ab311562e92eced9fbd4b0253da425841a056fba3b7c67eaafb91769c8",
+        "updated": "2025-10-30T08:03:27-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x2f3557a7a54d2c4c6a25007b7c37c8d14e87f7b331fd43e2dee056666722d05c",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "ICE::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "ICE",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x74d488eda5caaddf58b44ffe7544ede270c0f04d958446fa35543a3c00d5e00d",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.71,
+      "consensus_eps": 1.5,
+      "pm_consensus_eps": 1.61,
+      "pm_market_url": "https://polymarket.com/event/ice-quarterly-earnings-nongaap-eps-10-30-2025-1pt61",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1571949/000110465925104017/0001104659-25-104017-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1571949/000110465925104017/tm2529550d1_ex99-1.htm",
+        "dedupe_id": "61326ac48be4c9419e6029ab10fe57a5702aa0646e50e9fe255a8a102ac49229",
+        "updated": "2025-10-30T07:30:44-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x980fe501cabf20bb8bdbe3a2558f78038245c4585013a5741a1fe678d69acab3",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "ROKU::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "ROKU",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x9b8785fb0c64443eb30b3ccad421ba81b1cbdd013f3b66bbbfab53bbd3e5aa96",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.16,
+      "consensus_eps": 0.45,
+      "pm_consensus_eps": 0.08,
+      "pm_market_url": "https://polymarket.com/event/roku-quarterly-earnings-gaap-eps-10-30-2025-0pt08",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1428439/000162828025047527/0001628280-25-047527-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1428439/000162828025047527/a08form8ker-exhibit991q325.htm",
+        "dedupe_id": "fbcf8426e33fa9763e5dfd0b02764e61cd23a8952f544c297e0e0809ec24dc03",
+        "updated": "2025-10-30T16:05:30-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x37428ff52525dad27fcabc5442a68180e6adb64c6396865651226e8fcf1f2733",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "SHAK::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "SHAK",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x73035ca5dc69585d9f4e506482bfdaef39b824f783929a56cf4e698c02fd1514",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.36,
+      "consensus_eps": 0.59,
+      "pm_consensus_eps": 0.31,
+      "pm_market_url": "https://polymarket.com/event/shak-quarterly-earnings-nongaap-eps-10-30-2025-0pt31",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1620533/000162053325000072/0001620533-25-000072-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1620533/000162053325000072/shak-20251030_exhibit991.htm",
+        "dedupe_id": "23414968bcadaf8bcf88fa3bb074482a9fa7bac1b2bb23de4835a2e2e717211c",
+        "updated": "2025-10-30T07:02:40-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x683b8c5359d8f5b5234d3ba1534b454edac85adfb3213306aa4bedf82ed1fe42",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "TW::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "TW",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x527c67149475899f76a363d528fde13bd678b4c9e3f281fd898d1e36322fc528",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.87,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.83,
+      "pm_market_url": "https://polymarket.com/event/tw-quarterly-earnings-nongaap-eps-10-30-2025-0pt83",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1758730/000175873025000171/0001758730-25-000171-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1758730/000175873025000171/tw-2025xq3xex991.htm",
+        "dedupe_id": "69297b0c7d197956c3b376e373aa21251dc127a8f222a19c23486cda6dd2270a",
+        "updated": "2025-10-30T07:02:32-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x5d2dd10045952c8d2bf84e5678800531d18a93d9ef1aaa30e4bdeda965474699",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CBOE::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CBOE",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xf3429f1531daa6fbe071440347f7a07cb29ed3287290cabe7f3df8ba381bef4c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.67,
+      "consensus_eps": null,
+      "pm_consensus_eps": 2.53,
+      "pm_market_url": "https://polymarket.com/event/cboe-quarterly-earnings-nongaap-eps-10-31-2025-2pt53",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1374310/000162828025047668/0001628280-25-047668-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1374310/000162828025047668/cboe-20251031xex991.htm",
+        "dedupe_id": "e2d5731d5244fab0838219217b2c5d12dfe104d3b284a32b8c579f0fb21999df",
+        "updated": "2025-10-31T07:30:24-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x1e391fe5368febfba2144251eb1f09472f36848cf3820f66ca9b2937181df4d7",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CVX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CVX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xc3139a4e4dba972006082748f188ba8d68d866cb852ddec1615b052a2fd30389",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.85,
+      "consensus_eps": 3.85,
+      "pm_consensus_eps": 1.07,
+      "pm_market_url": "https://polymarket.com/event/cvx-quarterly-earnings-nongaap-eps-10-31-2025-1pt7",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/93410/000009341025000103/0000093410-25-000103-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/93410/000009341025000103/a09302025ex9918-k.htm",
+        "dedupe_id": "c587e4b2d70198179a1f278be7ffa3dd9aab0b8f0f84797b096b93799f68e5bd",
+        "updated": "2025-10-31T06:16:33-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0xc2e7185dd37e9709710f630c05d4c4f25041e8af6dd7f90d31f92c3c0d5bfad8",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CBT::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CBT",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xc0cfdcb18a484e09269cd6ceaf116fc2f9df1a64796749ad19cfde81a969d177",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.7,
+      "consensus_eps": 2.5,
+      "pm_consensus_eps": 1.68,
+      "pm_market_url": "https://polymarket.com/event/cbt-quarterly-earnings-nongaap-eps-11-03-2025-1pt68",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/16040/000119312525262842/0001193125-25-262842-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/16040/000119312525262842/cbt-ex99_1.htm",
+        "dedupe_id": "13e4fe619a161f816bae18762d214248e0ca8b2e06d818e0d666dd39d7edbdfb",
+        "updated": "2025-11-03T17:30:29-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4013f5ce76b15795bcb7667366b1a4166048e3d9780a17bc8cf4dd8feb909c5b",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CLX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CLX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x2ab357201de987d04eab2e63931827adc37334c31b4e4b4e1c019d0eeae708b9",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.85,
+      "consensus_eps": 2.45,
+      "pm_consensus_eps": 0.79,
+      "pm_market_url": "https://polymarket.com/event/clx-quarterly-earnings-nongaap-eps-11-03-2025-0pt79",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/21076/000002107625000051/0000021076-25-000051-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/21076/000002107625000051/ex991-pressreleasedatednov.htm",
+        "dedupe_id": "15b2791aaefd332d2f5b5f3f98c91f2dfcb4aaef1d1f3cc6b5a16f97906c7998",
+        "updated": "2025-11-03T16:12:05-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x77938f9ac79f75a8916a4309725ee1a995fce21e4ed8e9af3366a0cde9f4e44f",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "GTM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "GTM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x93de77db3dfeb0a448b4dc6a1fc15fb37d8e66d33c201bc73e733b39764f6ac1",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.28,
+      "consensus_eps": 0.85,
+      "pm_consensus_eps": 0.26,
+      "pm_market_url": "https://polymarket.com/event/gtm-quarterly-earnings-nongaap-eps-11-03-2025-0pt26",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1794515/000179451525000182/0001794515-25-000182-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1794515/000179451525000182/zi-8kex991x20251103.htm",
+        "dedupe_id": "3473553e0be9d39e1eb76181880b6cabd2b19a46c83c95e288976f8226e57c56",
+        "updated": "2025-11-03T16:09:11-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4db011e9d2fb32ad7058a45058e619dee5f997cfab90e22f83276267e088f7f5",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "HESM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "HESM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x61378da191e6664dcdc5fbd6f59137acc6631b6e09dea209c3d795590a882af2",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.75,
+      "consensus_eps": 0.45,
+      "pm_consensus_eps": 0.69,
+      "pm_market_url": "https://polymarket.com/event/hesm-quarterly-earnings-gaap-eps-11-03-2025-0pt69",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1789832/000119312525261718/0001193125-25-261718-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1789832/000119312525261718/hesm-ex99_1.htm",
+        "dedupe_id": "7103eeba3d64b931ba304adc892ff515ff209f3a7c8e4d70e6b48d5970bf2a09",
+        "updated": "2025-11-03T08:00:47-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4ba2db1d2f799277a486bd4ca8ca40424a515036475034f7332e3568b228ad33",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "IART::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "IART",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x98f0aed68d670e48c1c789b79abae8fdb263e5bba9dfbff313fbdf2921bf1bfb",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.54,
+      "consensus_eps": 0.12,
+      "pm_consensus_eps": 0.43,
+      "pm_market_url": "https://polymarket.com/event/iart-quarterly-earnings-nongaap-eps-11-03-2025-0pt43",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/917520/000091752025000094/0000917520-25-000094-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/917520/000091752025000094/ex991-q32025earningsrelease.htm",
+        "dedupe_id": "00fddf4d5ce95c936cbdb423f614f9e3ba6b61192930da742a4122a77f430386",
+        "updated": "2025-10-30T06:15:21-04:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6cbdbbf907475ad3ce23cce8cc42498a2c7605636ce5a49a6d550ffeaee7d186",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PLTR::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PLTR",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb5da9496f9aa8a68920dc2f9e829439bb3ab2d4b09f12adbaf6a6ca54ac332d6",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.21,
+      "consensus_eps": 0.09,
+      "pm_consensus_eps": 0.17,
+      "pm_market_url": "https://polymarket.com/event/pltr-quarterly-earnings-nongaap-eps-11-03-2025-0pt17",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000130/0001321655-25-000130-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000130/a2025q3ex991earningsrelease.htm",
+        "dedupe_id": "dc3605a406d0d64bd973104f0d96a2c79040616440547afbb002f200e3982d84",
+        "updated": "2025-11-03T16:06:20-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xe64a82afc4c4379ca72be5718b4e2dad1c0210eb26e9792ccd48d6624746339d",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "CGBD::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "CGBD",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x0167cad27908cbd2b9e29cd02cb33a28c3ff872046902e73f076de9e3bfb33b8",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.38,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.39,
+      "pm_market_url": "https://polymarket.com/event/cgbd-quarterly-earnings-gaap-eps-11-04-2025-0pt39",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000078/0001544206-25-000078-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000078/cgbd_20250930xxex991earnin.htm",
+        "dedupe_id": "05b227eaaf7dd267d494499c5f43f9022f8c36b83770b75ada7e151709373587",
+        "updated": "2025-11-04T16:03:29-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x98c6eca72ec75a298f715e5fcc15f3fd41b0bbb840588baac6eba41221d80fcc",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "HOG::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "HOG",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xde03994d5e2805b59e02d77b7b67c6e0409b92c99ea8c34c35ae2bff7e298f55",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 3.1,
+      "consensus_eps": 1.35,
+      "pm_consensus_eps": 1.07,
+      "pm_market_url": "https://polymarket.com/event/hog-quarterly-earnings-gaap-eps-11-4-2025-1pt7",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/793952/000110465925105891/0001104659-25-105891-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/793952/000110465925105891/tm2530006d1_ex99-1.htm",
+        "dedupe_id": "181b248a79cb66afd4eb984d01fdbdc2048444fdae07afba93ba304d0ef9b664",
+        "updated": "2025-11-04T06:50:50-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xe6d382e7842a65af92bfb718e551a2d68d940b71cc343b8e1d036a1d014bbd3c",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "LYV::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "LYV",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x7d499de8b23c4c4f276703f9d9ef144c40c090daa1e8e5d103cdf175cbf28581",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.73,
+      "consensus_eps": 1.5,
+      "pm_consensus_eps": 1.53,
+      "pm_market_url": "https://polymarket.com/event/lyv-quarterly-earnings-gaap-eps-11-04-2025-1pt53",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1335258/000133525825000150/0001335258-25-000150-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1335258/000133525825000150/lyv-2025q3xex991er.htm",
+        "dedupe_id": "15017bb894d727fe03a9a4fb8426f4b570e374ff7305c0827cd1b6463d9cac51",
+        "updated": "2025-11-04T16:21:10-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x6db8a45e45033fc5af3c4ba8df40021b545b34b9142ef5092bce6a2dfd4966ef",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "PJT::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "PJT",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x022ce32c0f073ac51735a34378c84e75a927d96e019a23c44f21b5dcfa6c7c4c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.85,
+      "consensus_eps": 1.15,
+      "pm_consensus_eps": 1.04,
+      "pm_market_url": "https://polymarket.com/event/pjt-quarterly-earnings-nongaap-eps-11-04-2025-1pt4",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1626115/000119312525263505/0001193125-25-263505-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1626115/000119312525263505/pjt-ex99_1.htm",
+        "dedupe_id": "c86d8e2370d3f3f16a8432615e2a05c142d46c642244b12107bc3ca0986f946f",
+        "updated": "2025-11-04T06:50:27-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x90ac88d65bef6fabae514bff34485e9febb65479f38e99790b2f204225a4597d",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "AMPL::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "AMPL",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x7b2f8ec7be07c08bedd19c401070629924e1c3b56007786b9dee6ec59f08adda",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.02,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.01,
+      "pm_market_url": "https://polymarket.com/event/ampl-quarterly-earnings-nongaap-eps-11-05-2025-0pt01",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312525266930/0001193125-25-266930-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312525266930/ampl-ex99_1.htm",
+        "dedupe_id": "edc75651f42bb90c9e55f5774745f1d828e9aec1be4bd2c1581886071ab4ad83",
+        "updated": "2025-11-05T16:10:11-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4a3d21e380d43014f829400940498c9dad769c58c2bb7d3ff07444e959bb9b11",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "APP::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "APP",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x240b7221e3cefc50f1f977e26ab6b0c0225e46cac4fa22bc3cd360265249f2dd",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.45,
+      "consensus_eps": null,
+      "pm_consensus_eps": 2.39,
+      "pm_market_url": "https://polymarket.com/event/app-quarterly-earnings-gaap-eps-11-05-2025-2pt39",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000079/0001751008-25-000079-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000079/exhibit991-3q25earningspre.htm",
+        "dedupe_id": "3b15b6b0e05c63ecc2d63896f0a3ef3916555fe4afb2a83f4eb85f8c00f6bbe8",
+        "updated": "2025-11-05T16:07:48-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xb9845864dc649acb7a5baa0a4901b23ed42b6892e8c8af2ac0d0f844c7993be6",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "BMBL::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "BMBL",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x68fe4a8dc4ba295e7e9febf28f377c6c82e0ff5a460e6bd5da96b5c6f6fa84ab",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.33,
+      "consensus_eps": 0.15,
+      "pm_consensus_eps": 0.33,
+      "pm_market_url": "https://polymarket.com/event/bmbl-quarterly-earnings-gaap-eps-11-05-2025-0pt33",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1830043/000183004325000039/0001830043-25-000039-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1830043/000183004325000039/bmbl-ex991prxq32025.htm",
+        "dedupe_id": "e5ec05006fda6baefa41db8467d014370bcd414210f486743cfa2ab71decf898",
+        "updated": "2025-11-05T16:16:14-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x85ecb99b32c79e2e370f0be27b78362517976ac3185c842337a2495144396f90",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "DASH::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "DASH",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x279c8d120dfdb1ac051dfcfe9d373ee1d16624187fd2ed07d8817b7f9da2f07b",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.55,
+      "consensus_eps": null,
+      "pm_consensus_eps": 0.68,
+      "pm_market_url": "https://polymarket.com/event/dash-quarterly-earnings-gaap-eps-11-05-2025-0pt68",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1792789/000179278925000018/0001792789-25-000018-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1792789/000179278925000018/proddashex991-pressrelease.htm",
+        "dedupe_id": "09932945beb6246b98f3efbc91ce77735d5e7a258fdeea353be8a947f48e1ddb",
+        "updated": "2025-11-05T16:09:09-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x7d4723521701c20a9b4a9ef02b0bcae853a0c43f5fd7fc9d86f5df7b89747242",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "FIS::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "FIS",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xef3a122db5efd54782d2e91f093d7a55b6a79610b54cdd6eaaf8257ecd1bcf1f",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.51,
+      "consensus_eps": 1.45,
+      "pm_consensus_eps": 1.48,
+      "pm_market_url": "https://polymarket.com/event/fis-quarterly-earnings-nongaap-eps-11-05-2025-1pt48",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000125/0001136893-25-000125-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000125/q32025ex991.htm",
+        "dedupe_id": "10ebe0ffba1d2aefa6da487e8360396a6b978a005171d905df424dc3018c609c",
+        "updated": "2025-11-05T07:02:53-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x4eeddf502b3e547fa3fad3cea9aab70be98d197af97bc89e02c90a57d6712b44",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "FTDR::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "FTDR",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x667b438b683255c03bc549c66633e0d5076b65f38e9ed0c79e0c58118868b1d2",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.58,
+      "consensus_eps": 0.87,
+      "pm_consensus_eps": 1.51,
+      "pm_market_url": "https://polymarket.com/event/ftdr-quarterly-earnings-nongaap-eps-11-05-2025-1pt51",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1727263/000119312525265709/0001193125-25-265709-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1727263/000119312525265709/ftdr-ex99_1.htm",
+        "dedupe_id": "79cdc0e7d006fe5aa2f8a78679d32f10feea55859eff366c0d2a39025e1adfe5",
+        "updated": "2025-11-05T07:05:40-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xda0ab158f5c9f6d71f8e08601280308a2667c96386c52a5c78fa166acad9ff2b",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "HUBS::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "HUBS",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xe8c4592ca54d187800a1ac96bb4306ea4a765c452b991aa2603345ba1dc3a3d6",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.66,
+      "consensus_eps": 3.5,
+      "pm_consensus_eps": 2.59,
+      "pm_market_url": "https://polymarket.com/event/hubs-quarterly-earnings-nongaap-eps-11-05-2025-2pt59",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312525267023/0001193125-25-267023-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312525267023/hubs-ex99_1.htm",
+        "dedupe_id": "e4e560f4db2a3ff77ff41fc440d45169658a7dc0a51c9dabea94aff9be5d749b",
+        "updated": "2025-11-05T16:20:59-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xbf761af75d6165bbc9323bde08b8cd95088ad863ae991c4d03e739dca42e9796",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "MCD::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MCD",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb4e390f51b7b166e80aa2bd4ca6a7efd11d137edbc0329a84b39d48eaf9f084c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 3.22,
+      "consensus_eps": null,
+      "pm_consensus_eps": 3.33,
+      "pm_market_url": "https://polymarket.com/event/mcd-quarterly-earnings-nongaap-eps-11-05-2025-3pt33",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000057/0000063908-25-000057-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000057/exhibit991-9302025.htm",
+        "dedupe_id": "4e87b15ecee75aa6979a6acfa13a13ea9a75888cce0b2f69b44d99c2395c8e20",
+        "updated": "2025-11-05T07:01:49-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xa09c9194bda9dfec0111b61563245d24a6d272755b3b7a7ac2346040ec311257",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "MET::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MET",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xb31cf29fc4077ecd85b2ec3881f8fa64c9e9555cff2b68f96ce27b3393ace3bb",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.37,
+      "consensus_eps": 3.5,
+      "pm_consensus_eps": 2.32,
+      "pm_market_url": "https://polymarket.com/event/met-quarterly-earnings-nongaap-eps-11-05-2025-2pt32",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921925000227/0001099219-25-000227-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921925000227/ex991earningsreleasetables.htm",
+        "dedupe_id": "bd846d6bb8d865d43bb66060372c8059a9948a0aea7fa2a9b038f4e672634526",
+        "updated": "2025-11-05T16:32:16-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x3adf08af64d947671aeb042a64b96fff76a6ca18327eceb3d20b49604ab331e9",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "QCOM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "QCOM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xf5a5902f517e788744fc988fdad01072f541e49ed84ac5876b6a88b7d0c4d245",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 12.03,
+      "consensus_eps": 2.38,
+      "pm_consensus_eps": 2.86,
+      "pm_market_url": "https://polymarket.com/event/qcom-quarterly-earnings-nongaap-eps-11-05-2025-2pt86",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000084/0000804328-25-000084-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000084/qcom092825erex991.htm",
+        "dedupe_id": "9143f7f065c92a1554f12701c1bc52e18aad0c9fe1ea86ca04d0fbe697ae82ad",
+        "updated": "2025-11-05T16:01:12-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x932d9fa48613dbf4eb8c3b148e35016943a3db30bd187b72d3eb26d705cfed1c",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "SUN::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "SUN",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x058a119e3796e765639b774090e867a695731aae2c958f8f6bc27e67d26de2db",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.64,
+      "consensus_eps": 0.45,
+      "pm_consensus_eps": 1.37,
+      "pm_market_url": "https://polymarket.com/event/sun-quarterly-earnings-gaap-eps-11-05-2025-1pt37",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1552275/000155227525000079/0001552275-25-000079-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1552275/000155227525000079/ex991sunerq32025.htm",
+        "dedupe_id": "cd938b637900dd2abc6df2d10f22b72d7691a1a60d8674cc9a399f1f70ee3ebf",
+        "updated": "2025-11-05T07:11:12-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xfed31b23dcbbe01555abb9023fab6226c26da994fba2107ecdd8f76c552dcf34",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "AKAM::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "AKAM",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x549f6caf68be721e9e0e103b3fd24219e6d644a3275c76d0d8053c46a8d32f21",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.86,
+      "consensus_eps": 1.45,
+      "pm_consensus_eps": 1.64,
+      "pm_market_url": "https://polymarket.com/event/akam-quarterly-earnings-nongaap-eps-11-06-2025-1pt64",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1086222/000108622225000252/0001086222-25-000252-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1086222/000108622225000252/exhibit991-q32025.htm",
+        "dedupe_id": "29a12bfb296f5ecb7757d69c33d0dc3af9f7e8f0345fe65e21e9ae1ec9e38e45",
+        "updated": "2025-11-06T16:03:23-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x2b55bd5cd24f62e831c76f744fbf133c246fec43731950c69dca3827540f40ca",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "DBX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "DBX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x3c2a5a5a0d226b08cef65d2da4c994c64e67b3ac21a1f82c71db58696738889c",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.74,
+      "consensus_eps": 1.45,
+      "pm_consensus_eps": 0.65,
+      "pm_market_url": "https://polymarket.com/event/dbx-quarterly-earnings-nongaap-eps-11-06-2025-0pt65",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1467623/000146762325000127/0001467623-25-000127-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1467623/000146762325000127/q32025er-exhibit991q2xq4.htm",
+        "dedupe_id": "e676742e25925d589bf563659da1ea8d405a656d80390dec8e6192c93692bd9c",
+        "updated": "2025-11-06T16:06:10-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x34cc0f0c075e80a3f89740f5db50b38844852eb57f1d237b1bfac9b808e2e189",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "DD::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "DD",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x2c91ae39b411ab15cfdcf148a174f4aa7e922c8f9c050daa346a72c933a1a731",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.09,
+      "consensus_eps": 2.5,
+      "pm_consensus_eps": 1.11,
+      "pm_market_url": "https://polymarket.com/event/dd-quarterly-earnings-nongaap-eps-11-06-2025-1pt11",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1666700/000166670025000058/0001666700-25-000058-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1666700/000166670025000058/exhibit991enrschedules-3q25.htm",
+        "dedupe_id": "b3560ff2e40bc875f2a98f24959259569f49723fefe72779a5b6829c79738ce6",
+        "updated": "2025-11-06T06:05:02-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xab95a5ca04d53035daa96134b495a5d6466f27823d7d20d10bb8d5bc7aede15c",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "DDOG::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "DDOG",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x72981e2e932eb2c7877f004c0e52da15c73978377d8a77161c6064db6afbe7ab",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.55,
+      "consensus_eps": 1.52,
+      "pm_consensus_eps": 0.46,
+      "pm_market_url": "https://polymarket.com/event/ddog-quarterly-earnings-nongaap-eps-11-06-2025-0pt46",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155025000310/0001561550-25-000310-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155025000310/ex-991x20250930x8k.htm",
+        "dedupe_id": "91ceea824eb7f3b451f82f023b53b9d1832e8c6fcc830714840a638ec5c9d5f3",
+        "updated": "2025-11-06T07:07:06-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x9b5878e82e328c3dcb324d29420e5747b6b6a1fd3a6d30a033465c7ff531023e",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "ICUI::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "ICUI",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xcf679dc413e7e290036b4cbdfbb309d3d9783739d37f504797eca4739297322d",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 2.03,
+      "consensus_eps": 2.5,
+      "pm_consensus_eps": 1.43,
+      "pm_market_url": "https://polymarket.com/event/icui-quarterly-earnings-nongaap-eps-11-06-2025-1pt43",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/883984/000088398425000034/0000883984-25-000034-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/883984/000088398425000034/exhibit991q32025er.htm",
+        "dedupe_id": "8d82f4b59bb65cfa9a88f7c2edc70794a60be67f5b31aef37a7353257ed1bfde",
+        "updated": "2025-11-06T16:10:37-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xb403884ee5ff4dd45e84e0ad0ddadd6f6e2b0fce665530ed00980bdc00fe737f",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "MNST::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "MNST",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xe29821ecc130d1334bb3ff47727c9c725939eb95e3a2c677a36af192c200e919",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.56,
+      "consensus_eps": 0,
+      "pm_consensus_eps": 0.48,
+      "pm_market_url": "https://polymarket.com/event/mnst-quarterly-earnings-gaap-eps-11-06-2025-0pt48",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/865752/000110465925107778/0001104659-25-107778-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/865752/000110465925107778/tm2530426d1_ex99-1.htm",
+        "dedupe_id": "bb675d0b7726931acbd66edec9a57967b6be98f97e1f4d49014e317d5c48d301",
+        "updated": "2025-11-06T16:27:37-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xc0e8015ef8a84ee945310270632c769cffd0e293305cd63bdc0f98824f913449",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "OS::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "OS",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x76aa84595842a07b83936f706bdccba64a1327fc8e8a505c51e3988003c61df1",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.08,
+      "consensus_eps": 1.45,
+      "pm_consensus_eps": -0.14,
+      "pm_market_url": "https://polymarket.com/event/os-quarterly-earnings-gaap-eps-11-06-2025-neg0pt14",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1889956/000119312525269511/0001193125-25-269511-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1889956/000119312525269511/ck0001889956-ex99_1.htm",
+        "dedupe_id": "fcf40007588ee32e3ce2b3de0a4a90e180f21831f7ab0c0fd52bb5465c50599e",
+        "updated": "2025-11-06T16:10:11-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x390e7166b8d90e138086ee197d7b9baaf387e20f02085950c7ab7cf9ddd55a41",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "RL::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "RL",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x3991c900ed0baf38f84fabc1dc9d73954653016c92240e35553d3d14d49b73ce",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 3.79,
+      "consensus_eps": 0,
+      "pm_consensus_eps": 3.45,
+      "pm_market_url": "https://polymarket.com/event/rl-quarterly-earnings-nongaap-eps-11-06-2025-3pt45",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828025049886/0001628280-25-049886-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828025049886/rl-20250927ex991xpressrele.htm",
+        "dedupe_id": "65ec8f362d4702a1d5546da287db523f0bb0b951697115114cf224e101efbb8b",
+        "updated": "2025-11-06T08:13:17-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xa1747a9b0d11bc66c3a84ccc36dd3c24a66493c4c377b86fdcb877ac4c9d4882",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "SNDK::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "SNDK",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x65448db112bae0530d0a664c8eec66023ff591999e2d782fa1175750374321a1",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.22,
+      "consensus_eps": 0,
+      "pm_consensus_eps": 0.88,
+      "pm_market_url": "https://polymarket.com/event/sndk-quarterly-earnings-nongaap-eps-11-06-2025-0pt88",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828025050180/0001628280-25-050180-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828025050180/sndkq1fy26ex991-pressrelea.htm",
+        "dedupe_id": "be0a9fd5309bbd15db1e75192dcd397272d8e31b3c1ff87d0e16d97611479147",
+        "updated": "2025-11-06T16:13:25-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x545d61b54288171068a1508d1dbdb9db515f78f2ddda13245ba867ff1d315bdd",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "TFX::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "TFX",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xaae1177c5f3f32ba45c758bc8711aaa3b2c15c5424fd43f29266453168e931f3",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 3.67,
+      "consensus_eps": null,
+      "pm_consensus_eps": 3.38,
+      "pm_market_url": "https://polymarket.com/event/tfx-quarterly-earnings-nongaap-eps-11-06-2025-3pt38",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/96943/000009694325000136/0000096943-25-000136-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/96943/000009694325000136/ex991to11-6x20258xkreq3202.htm",
+        "dedupe_id": "c82d440b60b182157ea0bf4606c38d5b444845e15309b6f89043fa3e476818ea",
+        "updated": "2025-11-06T07:00:42-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x1e6860cc79f6ac3ecb8e09dd3c29beb4783c3637155b31cd48a586c2653ed7f8",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "TRIP::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "TRIP",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xa4c10d022e772c8807f91f4997696f912c6a7b9dd3379bfe54427774ef808e9f",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.65,
+      "consensus_eps": 0.48,
+      "pm_consensus_eps": 0.55,
+      "pm_market_url": "https://polymarket.com/event/trip-quarterly-earnings-nongaap-eps-11-06-2025-0pt55",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1526520/000119312525268036/0001193125-25-268036-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1526520/000119312525268036/trip-ex99_1.htm",
+        "dedupe_id": "45533591c14c93e0320ee91d0ef48febe8576071b2a9c34689a2c8615d5bfca1",
+        "updated": "2025-11-06T07:01:27-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x5dd6eba59fe8ebba03f73b5762f50c246389fc2c5492c34aef678d4ca1fd4543",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "UAA::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "UAA",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xc38aa720deffa54d2c1a7297dfd2a60bcabc577b1d2782390d7c9bba554ace44",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.04,
+      "consensus_eps": 0.45,
+      "pm_consensus_eps": 0.02,
+      "pm_market_url": "https://polymarket.com/event/uaa-quarterly-earnings-nongaap-eps-11-06-2025-0pt02",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1336917/000133691725000193/0001336917-25-000193-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1336917/000133691725000193/exhibit991-fiscal2026q2.htm",
+        "dedupe_id": "41f3b89157c6000526e4d2f0f871fc51b19f643d402ce8442d5b6694aca3158f",
+        "updated": "2025-11-06T07:32:36-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x3361e25d63030b8fd7278e0bba63c57d5f2def83bdf99a24102ea6cbd759e13d",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "USFD::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "USFD",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0xf26f607bb3902140e6d214726e612fd0fab41defae78ba02196ca8bc405ac91f",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 1.07,
+      "consensus_eps": null,
+      "pm_consensus_eps": 1.03,
+      "pm_market_url": "https://polymarket.com/event/usfd-quarterly-earnings-nongaap-eps-11-06-2025-1pt03",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1665918/000166591825000144/0001665918-25-000144-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1665918/000166591825000144/usfd09272025ex991.htm",
+        "dedupe_id": "5c5ff24cf633c36b36a828e20f7473cd0068794441fd40a75f09ce0f9a302c33",
+        "updated": "2025-11-06T06:47:36-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0xf09c86ee41b9630dc2032323706168ff80630d0522cca66d970889e36028151e",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    },
+    "YELP::CY2025Q3": {
+      "schema_id": "SEC_EPS_V1",
+      "ticker": "YELP",
+      "periodId": "CY2025Q3",
+      "period_keccak": "0x71a3f7d0976d265367420341687e067587758d044477d2cff7db54429bd74764",
+      "ticker_keccak": "0x25f146480178fba4b2b75358a3b5cf965dd03e8a7904391b95e2811316c8df7d",
+      "metric_ids": {
+        "non_gaap_eps": "0xb4ea778bece84687cb636174c473ac35a6d6322d78e30df8de8be0195b0d071a",
+        "consensus_eps": "0xf410d5fec2f90237002806424fe8c11a6b17e9257f91d6b6911b1cd7df371adf"
+      },
+      "non_gaap_eps": 0.61,
+      "consensus_eps": 0.45,
+      "pm_consensus_eps": 0.53,
+      "pm_market_url": "https://polymarket.com/event/yelp-quarterly-earnings-gaap-eps-11-06-2025-0pt53",
+      "pm_chain_outcome": "PENDING",
+      "provenance": {
+        "filing_url": "https://www.sec.gov/Archives/edgar/data/1345016/000134501625000067/0001345016-25-000067-index.htm",
+        "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1345016/000134501625000067/yelpq3-25ex991pressrelease.htm",
+        "dedupe_id": "062e84985484197cce5deda7e1c779c125344ded0f85e7f5468252281ce54c64",
+        "updated": "2025-11-06T16:07:20-05:00"
+      },
+      "attestation": {
+        "tx_hash": "0x88ec3079e58665dab6e478540f87206275a43632e38601f22beb8faada2ee409",
+        "evidence_hash": null,
+        "url_hash": null,
+        "observed_at": null
+      }
+    }
+  }
+}

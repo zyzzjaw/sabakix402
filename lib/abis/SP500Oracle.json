@@ -1,0 +1,31 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "ticker", "type": "string" },
+      { "internalType": "bytes32", "name": "periodId", "type": "bytes32" },
+      { "internalType": "bytes32", "name": "metricId", "type": "bytes32" }
+    ],
+    "name": "getAttestation",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "bytes32", "name": "periodId", "type": "bytes32" },
+          { "internalType": "bytes32", "name": "metricId", "type": "bytes32" },
+          { "internalType": "bytes32", "name": "evidenceHash", "type": "bytes32" },
+          { "internalType": "bytes32", "name": "urlHash", "type": "bytes32" },
+          { "internalType": "int256", "name": "value", "type": "int256" },
+          { "internalType": "uint64", "name": "observedAt", "type": "uint64" },
+          { "internalType": "uint8", "name": "decimals", "type": "uint8" },
+          { "internalType": "uint8", "name": "sourceType", "type": "uint8" },
+          { "internalType": "uint256", "name": "lastUpdated", "type": "uint256" }
+        ],
+        "internalType": "struct SP500Oracle.Attestation",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
+
