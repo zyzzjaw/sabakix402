@@ -6,18 +6,21 @@
   "endpoints": [
     {
       "name": "x402-facts",
-      "endpoint": "https://sabaki.ai/api/facts/{ticker}",
-      "version": "1.0.0"
+      "endpoint": "https://facts.sabaki.ai/api/facts/{ticker}",
+      "version": "1.0.0",
+      "description": "Paid EPS fact bundles (x402 protected)"
     },
     {
       "name": "SP500Oracle",
       "endpoint": "eip155:43113:0xA17b8A538286f0415e0a5166440f0E452BF35968",
-      "version": "v1"
+      "version": "v1",
+      "description": "Fuji on-chain attestation contract"
     },
     {
       "name": "support",
       "endpoint": "mailto:data@sabaki.ai",
-      "version": "v1"
+      "version": "v1",
+      "description": "Operational contact"
     }
   ],
   "registrations": [],
@@ -26,11 +29,17 @@
     "crypto-economic"
   ],
   "payment": {
-    "network": "solana:8E9r...replace...",
-    "facilitator": "SoL...replace...",
+    "network": "eip155:43113",
+    "facilitator": "0x879adD664596686e7aB304eC8350227c57FF6B06",
+    "recipient": "0x863A3bD6f28f4F4A131c88708dA91076fDC362C7",
     "price": {
-      "amount": "0.25",
-      "asset": "SOL"
+      "amount": "250000",
+      "asset": "0x5425890298aed601595a70AB815c96711a31Bc65",
+      "decimals": 6,
+      "symbol": "USDC"
+    },
+    "extra": {
+      "description": "x402 exact payment enforced via Thirdweb facilitator"
     }
   }
 }

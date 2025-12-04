@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "cli": "node ./scripts/sabaki-cli.mjs"
+    "cli": "node ./scripts/sabaki-cli.mjs",
+    "register-agent": "node ./scripts/register_agent.mjs"
   },
   "bin": {
     "sabaki-cli": "./scripts/sabaki-cli.mjs"
@@ -20,12 +21,13 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.552.0",
     "next": "15.1.6",
+    "pino-pretty": "^11.2.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
     "thirdweb": "^5.112.4",
-    "pino-pretty": "^11.2.2"
+    "viem": "^2.41.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
