@@ -9,15 +9,30 @@ interface PaymentCardProps {
   features?: string[];
   onPayClick: () => void;
   isPaying: boolean;
+  badgeText?: string;
+  disabled?: boolean;
+  disabledLabel?: string;
 }
 
-export function PaymentCard({ tier, price, description, features, onPayClick, isPaying }: PaymentCardProps) {
+export function PaymentCard({
+  tier,
+  price,
+  description,
+  features,
+  onPayClick,
+  isPaying,
+  badgeText = "x402",
+  disabled = false,
+  disabledLabel = "Coming Soon",
+}: PaymentCardProps) {
   return (
-    <Card className="w-full max-w-sm">
+    <Card className={`w-full max-w-sm ${disabled ? "opacity-60 pointer-events-none" : ""}`}>
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="text-2xl">{tier}</CardTitle>
-          <Badge variant="secondary" className="uppercase tracking-tight">x402</Badge>
+          <Badge variant="secondary" className="uppercase tracking-tight">
+            {badgeText}
+          </Badge>
         </div>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
@@ -39,8 +54,8 @@ export function PaymentCard({ tier, price, description, features, onPayClick, is
         )}
       </CardContent>
       <CardFooter>
-        <Button className="w-full" onClick={onPayClick} disabled={isPaying}>
-          {isPaying ? "Processing..." : "Pay Now"}
+        <Button className="w-full" onClick={onPayClick} disabled={disabled || isPaying}>
+          {disabled ? disabledLabel : isPaying ? "Processing..." : "Pay Now"}
         </Button>
       </CardFooter>
     </Card>

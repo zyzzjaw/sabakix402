@@ -15,43 +15,56 @@ const client = createThirdwebClient({
   clientId: process.env.NEXT_PUBLIC_THIRDWEB_CLIENT_ID!,
 });
 
-type ResourceTier = "feed" | "pm";
+type ResourceTier = "eps" | "pm";
 
-const RESOURCE_CONFIG: Record<
-  ResourceTier,
-  {
-    label: string;
-    description: string;
-    priceLabel: string;
-    endpoint: string;
-    price: bigint;
-    notes: string[];
-  }
-> = {
-  feed: {
-    label: "EPS Fact Feed",
+type ResourceConfig = {
+  label: string;
+  description: string;
+  priceLabel: string;
+  endpoint: string;
+  price: bigint;
+  notes: string[];
+  badgeText?: string;
+  disabled?: boolean;
+  disabledLabel?: string;
+};
+
+const RESOURCE_CONFIG: Record<ResourceTier, ResourceConfig> = {
+  eps: {
+    label: "EPS Fact Bundle",
     description: "Pay-per-fact access to Sabaki's posted EPS attestations.",
-    priceLabel: "$0.01",
+    priceLabel: "$0.25",
     endpoint: API_ENDPOINTS.FEED,
     price: PAYMENT_AMOUNTS.FEED.bigInt,
     notes: [
-      "Full JSON payload from sabaki.ai/feed",
-      "Includes tx hashes, AI votes, and evidence hashes",
-      "Great for agents that need verified EPS facts",
+      "Returns the same JSON exposed at /api/facts/{ticker}",
+      "Includes ledger hashes + live SP500Oracle proofs",
+      "Enable dev mode by sending header x-skip-payment: 1 (ALLOW_UNPAID_FACTS must be true)",
     ],
   },
   pm: {
     label: "Polymarket Snapshot",
-    description: "Mirror of sabaki.ai/pm with resolved + pending markets.",
+    description: "Mirror of sabaki.ai/pm (coming soon).",
     priceLabel: "$0.15",
     endpoint: API_ENDPOINTS.PM,
     price: PAYMENT_AMOUNTS.PM.bigInt,
     notes: [
-      "All normalized Polymarket markets",
-      "Resolved date + outcome metadata",
-      "Use for cross-checking predictions",
+      "Future add-on: normalized Polymarket markets",
+      "Resolved + pending metadata for cross-checking predictions",
+      "Not available in this hackathon build",
     ],
+    badgeText: "soon",
+    disabled: true,
+    disabledLabel: "In Progress",
   },
+};
+
+const AGENT_INFO = {
+  agentId: 1,
+  registry: "0x947B58885eee5f47C12a1B4320fFc7DC34aC6652",
+  registryDisplay: "0x947B...6652",
+  agentJson: "https://facts.sabaki.ai/agent.json",
+  contract: "0xA17b8A538286f0415e0a5166440f0E452BF35968",
 };
 
 interface ContentData {
@@ -159,14 +172,52 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="text-center space-y-2">
-          <h1 className="text-4xl font-bold">Sabaki Fact Base • x402 Paywall</h1>
-          <p className="text-muted-foreground">Buy auditable data feeds via HTTP 402 + Thirdweb</p>
+          <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
+          <p className="text-muted-foreground">Minted on ERC-8004, paid access on Avalanche Fuji</p>
           <div className="flex items-center justify-center gap-2 pt-2">
             <ConnectButton client={client} />
           </div>
         </div>
 
+        <div className="bg-white/80 rounded-xl shadow p-6 space-y-3 text-sm text-left">
+          <p className="font-semibold">How to demo:</p>
+          <ol className="list-decimal list-inside space-y-1 text-muted-foreground">
+            <li>Connect a Fuji wallet and click the EPS Fact Bundle card to run the full x402 payment.</li>
+            <li>No wallet? Send requests with header <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is enabled via ALLOW_UNPAID_FACTS).</li>
+            <li>The JSON response is the same bundle returned at <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes, SP500Oracle proofs, payment receipt, and signature.</li>
+          </ol>
+        </div>
+
         <Separator />
+
+        <div className="bg-white/80 rounded-xl shadow p-6 space-y-4 text-left">
+          <div>
+            <p className="text-sm uppercase tracking-wide text-muted-foreground">ERC-8004 Identity</p>
+            <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
+            <p className="text-muted-foreground">
+              Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
+            </p>
+          </div>
+          <div className="grid gap-3 text-sm">
+            <div className="flex flex-col">
+              <span className="text-muted-foreground">Registry Address</span>
+              <code className="bg-slate-100 px-3 py-1 rounded w-fit">{AGENT_INFO.registry}</code>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-muted-foreground">Agent Metadata</span>
+              <a href={AGENT_INFO.agentJson} target="_blank" className="text-blue-600 underline">
+                {AGENT_INFO.agentJson}
+              </a>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-muted-foreground">Fact Contract</span>
+              <code className="bg-slate-100 px-3 py-1 rounded w-fit">{AGENT_INFO.contract}</code>
+            </div>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Tip: run <code className="bg-slate-100 px-1 py-0.5 rounded">cast call {AGENT_INFO.registry} "tokenURI(uint256)" {AGENT_INFO.agentId}</code> to verify the metadata hash matches the URL above.
+          </p>
+        </div>
 
         <div className="flex flex-wrap justify-center gap-6">
           {(Object.keys(RESOURCE_CONFIG) as ResourceTier[]).map((resource) => {
@@ -180,6 +231,9 @@ export default function Home() {
                 features={config.notes}
                 onPayClick={() => handlePayment(resource)}
                 isPaying={isPaying === resource}
+                badgeText={config.badgeText}
+                disabled={config.disabled}
+                disabledLabel={config.disabledLabel}
               />
             );
           })}
