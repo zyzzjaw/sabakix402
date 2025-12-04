@@ -17,10 +17,7 @@ const ALLOW_UNPAID = process.env.ALLOW_UNPAID_FACTS === "true";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { ticker: string } },
-) {
+export async function GET(request: NextRequest, context: any) {
   let facilitatorInstance: ReturnType<typeof ensureFacilitator>;
   let merchantWallet: string;
   try {
@@ -33,7 +30,9 @@ export async function GET(
     throw err;
   }
 
-  const ticker = params.ticker?.toUpperCase();
+  const ticker = context?.params?.ticker
+    ? String(context.params.ticker).toUpperCase()
+    : undefined;
   if (!ticker) {
     return NextResponse.json({ error: "missing_ticker_param" }, { status: 400 });
   }
