@@ -9,7 +9,7 @@ import {
   misconfiguredResponse,
 } from "../handler";
 import { loadFactCache, getFactFromCache } from "@/lib/factStore";
-import { FACT_PRICE_AMOUNT } from "@/lib/constants";
+import { FACT_PRICE_AMOUNT, USDC_FUJI_ADDRESS } from "@/lib/constants";
 import { readAttestation, SP500_ORACLE_ADDRESS } from "@/lib/onchain";
 import { signBundle } from "@/lib/signing";
 
@@ -76,7 +76,13 @@ export async function GET(request: NextRequest, context: any) {
           paymentData,
           payTo: merchantWallet,
           network: avalancheFuji,
-          price: FACT_PRICE_AMOUNT,
+          price: {
+            amount: FACT_PRICE_AMOUNT,
+            asset: {
+              address: USDC_FUJI_ADDRESS,
+              decimals: 6,
+            },
+          },
           facilitator: facilitatorInstance,
         });
       } catch (err) {

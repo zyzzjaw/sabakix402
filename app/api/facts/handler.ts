@@ -1,6 +1,7 @@
 import { createThirdwebClient } from "thirdweb";
 import { settlePayment, facilitator } from "thirdweb/x402";
 import { avalancheFuji } from "thirdweb/chains";
+import { USDC_FUJI_ADDRESS } from "@/lib/constants";
 
 type FactConfig = {
   resource: "feed" | "pm";
@@ -99,7 +100,13 @@ export function createFactHandler(config: FactConfig) {
         paymentData,
         payTo: merchantWallet,
         network: avalancheFuji,
-        price: config.priceAmount, // native AVAX (wei) on Fuji
+        price: {
+          amount: config.priceAmount,
+          asset: {
+            address: USDC_FUJI_ADDRESS,
+            decimals: 6,
+          },
+        },
         facilitator: facilitatorInstance,
       });
 
