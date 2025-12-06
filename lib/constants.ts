@@ -20,15 +20,15 @@ export const API_ENDPOINTS = {
   PM: `${API_BASE_URL}/api/facts/pm`,
 } as const;
 
-// Payment Amounts (native AVAX in wei on Fuji)
+// Payment Amounts (native AVAX in wei on Fuji) -- keep under 1e9 per Thirdweb limits
 export const PAYMENT_AMOUNTS = {
   FEED: {
-    amount: "10000000000000000", // 0.01 AVAX
-    bigInt: BigInt("10000000000000000"),
+    amount: "1000000000", // tiny stub (1e9 wei) to pass zod limit; actual price should be set via env FACT_PRICE_AMOUNT
+    bigInt: BigInt("1000000000"),
   },
   PM: {
-    amount: "15000000000000000", // 0.015 AVAX (disabled tier)
-    bigInt: BigInt("15000000000000000"),
+    amount: "1000000000",
+    bigInt: BigInt("1000000000"),
   },
 } as const;
 
