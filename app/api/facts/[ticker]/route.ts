@@ -139,6 +139,19 @@ export async function GET(request: NextRequest, context: any) {
 
     const nowIso = new Date().toISOString();
 
+  // Merge on-chain hashes into ledger snapshot when missing, so bundles always surface
+  // the canonical evidence/url hashes even if the ledger row didn't persist them.
+  const mergedLedger: any = { ...(record.attestation || {}) };
+  if (!mergedLedger.evidence_hash && serializedOnchainNonGaap?.evidenceHash) {
+    mergedLedger.evidence_hash = serializedOnchainNonGaap.evidenceHash;
+  }
+  if (!mergedLedger.url_hash && serializedOnchainNonGaap?.urlHash) {
+    mergedLedger.url_hash = serializedOnchainNonGaap.urlHash;
+  }
+  if (!mergedLedger.observed_at && serializedOnchainNonGaap?.observedAt) {
+    mergedLedger.observed_at = Number(serializedOnchainNonGaap.observedAt);
+  }
+
     const basePayload: Record<string, unknown> = {
       schema_id: record.schema_id,
       ticker: record.ticker,
@@ -156,7 +169,7 @@ export async function GET(request: NextRequest, context: any) {
       },
       attestation: {
         contract: SP500_ORACLE_ADDRESS,
-        ledger: record.attestation,
+        ledger: mergedLedger,
         on_chain: Boolean(serializedOnchainNonGaap) || Boolean(serializedOnchainConsensus),
         on_chain_non_gaap: serializedOnchainNonGaap,
         on_chain_consensus: serializedOnchainConsensus,

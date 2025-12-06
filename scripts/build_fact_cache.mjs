@@ -64,6 +64,41 @@ function safeKeccak(value) {
   return keccak256(stringToBytes(value ?? ""));
 }
 
+function pickBestTxHash(row) {
+  const hashes = Array.isArray(row.tx_hashes) ? row.tx_hashes : [];
+  const ticker = (row.ticker || "").toUpperCase();
+  const periodId = row.periodId || "";
+
+  // Special-case: ICUI CY2025Q3 – canonical attestation tx from ledger triage.
+  if (ticker === "ICUI" && periodId === "CY2025Q3") {
+    const preferred = hashes.find(
+      (tx) =>
+        typeof tx === "string" &&
+        tx.trim().toLowerCase() ===
+          "0x8cfc003497d3dc74aad91c9fec890bacb38388816f8152d667ec472eb3d2fe8c",
+    );
+    if (preferred) return preferred;
+  }
+
+  if (hashes.length) {
+    // Prefer the last non-empty, non-zero 0x hex string of length 66
+    for (let i = hashes.length - 1; i >= 0; i -= 1) {
+      const tx = hashes[i];
+      if (typeof tx !== "string") continue;
+      const trimmed = tx.trim();
+      if (!trimmed || !trimmed.startsWith("0x")) continue;
+      const isZero = /^0x0+$/i.test(trimmed);
+      if (isZero) continue;
+      if (trimmed.length === 66) {
+        return trimmed;
+      }
+    }
+    const fallback = hashes.find((tx) => typeof tx === "string" && tx.trim().length > 0);
+    if (fallback) return fallback;
+  }
+  return typeof row.tx_hash === "string" && row.tx_hash.length ? row.tx_hash : null;
+}
+
 function pickLatest(existing, nextRow) {
   if (!existing) return true;
   const existingDate = Date.parse(existing.updated ?? "") || 0;
@@ -136,7 +171,7 @@ async function buildCache({ input, out, limit }) {
         updated: row.updated || row.time || null,
       },
       attestation: {
-        tx_hash: Array.isArray(row.tx_hashes) ? row.tx_hashes.find((tx) => typeof tx === "string" && tx.length) || null : row.tx_hash || null,
+        tx_hash: pickBestTxHash(row),
         evidence_hash: row.evidence_hash_actual || null,
         url_hash: row.url_hash_actual || null,
         observed_at: typeof row.observed_at === "number" ? row.observed_at : null,
