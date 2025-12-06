@@ -4,6 +4,7 @@ import { useState, useEffect, type ReactNode } from "react";
 import { createThirdwebClient } from "thirdweb";
 import { wrapFetchWithPayment } from "thirdweb/x402";
 import { ConnectButton, useActiveWallet, useActiveAccount } from "thirdweb/react";
+import { createWallet } from "thirdweb/wallets";
 import { PaymentCard } from "@/components/payment-card";
 import { ContentDisplay } from "@/components/content-display";
 import { TransactionLog, LogEntry } from "@/components/transaction-log";
@@ -14,6 +15,8 @@ import { AVALANCHE_FUJI_CHAIN_ID, PAYMENT_AMOUNTS, API_ENDPOINTS } from "@/lib/c
 const client = createThirdwebClient({
   clientId: process.env.NEXT_PUBLIC_THIRDWEB_CLIENT_ID!,
 });
+
+const wallets = [createWallet("io.metamask")];
 
 type ResourceTier = "eps" | "pm";
 
@@ -169,7 +172,7 @@ export default function Home() {
               <p className="text-slate-300">Pay-per-fact access on Avalanche Fuji</p>
               <p className="text-sm text-slate-400 mt-1">Connect a wallet to begin</p>
             </div>
-            <ConnectButton client={client} />
+            <ConnectButton client={client} wallets={wallets} />
           </div>
         </div>
       </PageShell>
@@ -182,7 +185,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
         <p className="text-slate-300">Minted on ERC-8004, paid access on Avalanche Fuji</p>
         <div className="flex items-center justify-center gap-2 pt-2">
-          <ConnectButton client={client} />
+          <ConnectButton client={client} wallets={wallets} />
         </div>
       </div>
 
