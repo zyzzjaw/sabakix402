@@ -143,7 +143,10 @@ export function createFactHandler(config: FactConfig) {
     } catch (err) {
       console.error("fact handler error", err);
       return Response.json(
-        { error: "internal_error", message: err instanceof Error ? err.message : String(err) },
+        {
+          error: "internal_error",
+          message: err instanceof Error ? err.message : String(err),
+        },
         { status: 500 },
       );
     }
