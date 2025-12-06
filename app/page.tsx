@@ -203,7 +203,14 @@ export default function Home() {
         <ol className="list-decimal list-inside space-y-1 text-slate-300">
           <li>Connect a Fuji wallet and click the EPS Fact Bundle card to run the full x402 payment.</li>
           <li>No wallet? Send requests with header <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is enabled via ALLOW_UNPAID_FACTS).</li>
-          <li>The JSON response is the same bundle returned at <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes, SP500Oracle proofs, payment receipt, and signature.</li>
+          <li>
+            The JSON response is the same bundle returned at{" "}
+            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>:{" "}
+            <span className="font-semibold">non_gaap_eps</span> is Sabaki&apos;s extracted EPS,{" "}
+            <span className="font-semibold">consensus_eps</span> comes from Polymarket,{" "}
+            <span className="font-semibold">attestation</span> links to Fuji&apos;s SP500Oracle, and{" "}
+            <span className="font-semibold">payment_receipt + signature</span> prove x402 payment and agent identity.
+          </li>
         </ol>
       </div>
 
