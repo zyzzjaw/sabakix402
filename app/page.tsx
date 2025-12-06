@@ -191,8 +191,8 @@ export default function Home() {
   return (
     <PageShell>
       <div className="text-center space-y-2">
-        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
-        <p className="text-slate-300">Minted on ERC-8004, paid access on Avalanche Fuji</p>
+        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • Paid EPS Facts</h1>
+        <p className="text-slate-300">On-chain audited earnings facts, paid per request on Avalanche Fuji</p>
         <div className="flex items-center justify-center gap-2 pt-2">
           <ConnectButton client={client} wallets={wallets} />
         </div>
@@ -204,12 +204,10 @@ export default function Home() {
           <li>Connect a Fuji wallet and click the EPS Fact Bundle card to run the full x402 payment.</li>
           <li>No wallet? Send requests with header <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is enabled via ALLOW_UNPAID_FACTS).</li>
           <li>
-            The JSON response is the same bundle returned at{" "}
-            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>:{" "}
-            <span className="font-semibold">non_gaap_eps</span> is Sabaki&apos;s extracted EPS,{" "}
-            <span className="font-semibold">consensus_eps</span> comes from Polymarket,{" "}
-            <span className="font-semibold">attestation</span> links to Fuji&apos;s SP500Oracle, and{" "}
-            <span className="font-semibold">payment_receipt + signature</span> prove x402 payment and agent identity.
+            The JSON you see here is exactly what agents get from{" "}
+            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>: it includes the reported
+            EPS, the Polymarket consensus number, links back to the Fuji SP500Oracle attestation, and a payment
+            receipt + signature so anyone can verify the call was paid for.
           </li>
         </ol>
       </div>
@@ -218,10 +216,11 @@ export default function Home() {
 
       <div className="bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-4 text-left">
         <div>
-          <p className="text-sm uppercase tracking-wide text-slate-400">ERC-8004 Identity</p>
+          <p className="text-sm uppercase tracking-wide text-slate-400">On-chain Agent Identity (ERC-8004)</p>
           <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
           <p className="text-slate-300">
-            Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
+            This endpoint is registered as an ERC-8004 agent on Avalanche Fuji (agentId {AGENT_INFO.agentId}), so
+            anyone can look up who owns it and what it claims to do before they trust or pay it.
           </p>
         </div>
         <div className="grid gap-3 text-sm">
