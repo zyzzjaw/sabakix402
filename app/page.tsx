@@ -37,7 +37,7 @@ const RESOURCE_CONFIG: Record<ResourceTier, ResourceConfig> = {
     label: "EPS Fact Bundle",
     description: "Pay-per-fact access to Sabaki's posted EPS attestations.",
     priceLabel: "0.01",
-    endpoint: API_ENDPOINTS.FEED,
+    endpoint: `${API_ENDPOINTS.FEED}/ICUI?period=CY2025Q3`,
     price: PAYMENT_AMOUNTS.FEED.bigInt,
     notes: [
       "Returns the same JSON exposed at /api/facts/{ticker}",
