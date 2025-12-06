@@ -75,7 +75,11 @@ export async function GET(request: NextRequest, context: any) {
     });
 
     if (settleResult.status !== 200) {
-      return new Response(JSON.stringify(settleResult.responseBody), {
+      const fallbackBody =
+        settleResult.responseBody && Object.keys(settleResult.responseBody).length > 0
+          ? settleResult.responseBody
+          : { error: "settle_failed", status: settleResult.status, note: "empty settle body" };
+      return new Response(JSON.stringify(fallbackBody), {
         status: settleResult.status,
         headers: settleResult.responseHeaders,
       });

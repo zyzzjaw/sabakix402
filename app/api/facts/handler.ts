@@ -103,7 +103,11 @@ export function createFactHandler(config: FactConfig) {
     });
 
     if (result.status !== 200) {
-      return new Response(JSON.stringify(result.responseBody), {
+      const body =
+        result.responseBody && Object.keys(result.responseBody).length > 0
+          ? result.responseBody
+          : { error: "settle_failed", status: result.status, note: "empty settle body" };
+      return new Response(JSON.stringify(body), {
         status: result.status,
         headers: result.responseHeaders,
       });
