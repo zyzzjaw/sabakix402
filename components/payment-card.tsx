@@ -56,7 +56,11 @@ export function PaymentCard({
         )}
       </CardContent>
       <CardFooter>
-        <Button className="w-full" onClick={onPayClick} disabled={disabled || isPaying}>
+        <Button
+          className="w-full bg-blue-500 hover:bg-blue-400 text-white disabled:opacity-60 disabled:cursor-not-allowed"
+          onClick={onPayClick}
+          disabled={disabled || isPaying}
+        >
           {disabled ? disabledLabel : isPaying ? "Processing..." : "Pay Now"}
         </Button>
       </CardFooter>

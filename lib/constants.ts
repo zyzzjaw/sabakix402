@@ -20,16 +20,17 @@ export const API_ENDPOINTS = {
   PM: `${API_BASE_URL}/api/facts/pm`,
 } as const;
 
-// Payment Amounts (USDC with 6 decimals)
+// Payment Amounts (native AVAX in wei on Fuji)
 export const PAYMENT_AMOUNTS = {
   FEED: {
-    amount: "10000", // $0.01 USDC
-    bigInt: BigInt(10000),
+    amount: "10000000000000000", // 0.01 AVAX
+    bigInt: BigInt("10000000000000000"),
   },
   PM: {
-    amount: "150000", // $0.15 USDC
-    bigInt: BigInt(150000),
+    amount: "15000000000000000", // 0.015 AVAX (disabled tier)
+    bigInt: BigInt("15000000000000000"),
   },
 } as const;
 
-export const FACT_PRICE_AMOUNT = process.env.FACT_PRICE_AMOUNT || "250000";
+export const FACT_PRICE_AMOUNT =
+  process.env.FACT_PRICE_AMOUNT || PAYMENT_AMOUNTS.FEED.amount;

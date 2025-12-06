@@ -36,7 +36,7 @@ const RESOURCE_CONFIG: Record<ResourceTier, ResourceConfig> = {
   eps: {
     label: "EPS Fact Bundle",
     description: "Pay-per-fact access to Sabaki's posted EPS attestations.",
-    priceLabel: "$0.25",
+    priceLabel: "0.01 AVAX",
     endpoint: API_ENDPOINTS.FEED,
     price: PAYMENT_AMOUNTS.FEED.bigInt,
     notes: [
@@ -48,7 +48,7 @@ const RESOURCE_CONFIG: Record<ResourceTier, ResourceConfig> = {
   pm: {
     label: "Polymarket Snapshot",
     description: "Mirror of sabaki.ai/pm (coming soon).",
-    priceLabel: "$0.15",
+    priceLabel: "0.015 AVAX",
     endpoint: API_ENDPOINTS.PM,
     price: PAYMENT_AMOUNTS.PM.bigInt,
     notes: [
