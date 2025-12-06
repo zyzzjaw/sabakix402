@@ -158,14 +158,12 @@ export async function GET(request: NextRequest, context: any) {
       periodId: record.periodId,
       facts: {
         non_gaap_eps: record.non_gaap_eps,
-      // Treat Polymarket-derived consensus as the canonical consensus value.
-      consensus_eps: record.pm_consensus_eps,
-      pm_consensus_eps: record.pm_consensus_eps,
+        pm_consensus_eps: record.pm_consensus_eps,
       },
       provenance: record.provenance,
       polymarket: {
         market_url: record.pm_market_url,
-        consensus_eps: record.pm_consensus_eps,
+        pm_consensus_eps: record.pm_consensus_eps,
       },
       attestation: {
         contract: SP500_ORACLE_ADDRESS,
