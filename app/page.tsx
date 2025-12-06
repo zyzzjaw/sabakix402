@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { createThirdwebClient } from "thirdweb";
 import { wrapFetchWithPayment } from "thirdweb/x402";
 import { ConnectButton, useActiveWallet, useActiveAccount } from "thirdweb/react";
@@ -66,6 +66,12 @@ const AGENT_INFO = {
   agentJson: "https://facts.sabaki.ai/agent.json",
   contract: "0xA17b8A538286f0415e0a5166440f0E452BF35968",
 };
+
+const PageShell = ({ children }: { children: ReactNode }) => (
+  <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100 p-8">
+    <div className="max-w-7xl mx-auto space-y-8">{children}</div>
+  </div>
+);
 
 interface ContentData {
   resource: ResourceTier;
@@ -155,109 +161,109 @@ export default function Home() {
 
   if (!wallet) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="text-center space-y-6 p-8">
-          <div>
-            <h1 className="text-4xl font-bold mb-2">Sabaki x402 Demo</h1>
-            <p className="text-muted-foreground">Pay-per-fact access on Avalanche Fuji</p>
-            <p className="text-sm text-muted-foreground mt-1">Connect a wallet to begin</p>
+      <PageShell>
+        <div className="flex items-center justify-center">
+          <div className="text-center space-y-6 p-8 bg-slate-900/60 border border-slate-800 rounded-2xl shadow-lg max-w-xl w-full">
+            <div>
+              <h1 className="text-4xl font-bold mb-2">Sabaki x402 Demo</h1>
+              <p className="text-slate-300">Pay-per-fact access on Avalanche Fuji</p>
+              <p className="text-sm text-slate-400 mt-1">Connect a wallet to begin</p>
+            </div>
+            <ConnectButton client={client} />
           </div>
-          <ConnectButton client={client} />
         </div>
-      </div>
+      </PageShell>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
-      <div className="max-w-7xl mx-auto space-y-8">
-        <div className="text-center space-y-2">
-          <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
-          <p className="text-muted-foreground">Minted on ERC-8004, paid access on Avalanche Fuji</p>
-          <div className="flex items-center justify-center gap-2 pt-2">
-            <ConnectButton client={client} />
-          </div>
+    <PageShell>
+      <div className="text-center space-y-2">
+        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
+        <p className="text-slate-300">Minted on ERC-8004, paid access on Avalanche Fuji</p>
+        <div className="flex items-center justify-center gap-2 pt-2">
+          <ConnectButton client={client} />
         </div>
+      </div>
 
-        <div className="bg-white/80 rounded-xl shadow p-6 space-y-3 text-sm text-left">
-          <p className="font-semibold">How to demo:</p>
-          <ol className="list-decimal list-inside space-y-1 text-muted-foreground">
-            <li>Connect a Fuji wallet and click the EPS Fact Bundle card to run the full x402 payment.</li>
-            <li>No wallet? Send requests with header <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is enabled via ALLOW_UNPAID_FACTS).</li>
-            <li>The JSON response is the same bundle returned at <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes, SP500Oracle proofs, payment receipt, and signature.</li>
-          </ol>
-        </div>
+      <div className="bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-3 text-sm text-left">
+        <p className="font-semibold">How to demo:</p>
+        <ol className="list-decimal list-inside space-y-1 text-slate-300">
+          <li>Connect a Fuji wallet and click the EPS Fact Bundle card to run the full x402 payment.</li>
+          <li>No wallet? Send requests with header <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is enabled via ALLOW_UNPAID_FACTS).</li>
+          <li>The JSON response is the same bundle returned at <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes, SP500Oracle proofs, payment receipt, and signature.</li>
+        </ol>
+      </div>
 
-        <Separator />
+      <Separator />
 
-        <div className="bg-white/80 rounded-xl shadow p-6 space-y-4 text-left">
-          <div>
-            <p className="text-sm uppercase tracking-wide text-muted-foreground">ERC-8004 Identity</p>
-            <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
-            <p className="text-muted-foreground">
-              Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
-            </p>
-          </div>
-          <div className="grid gap-3 text-sm">
-            <div className="flex flex-col">
-              <span className="text-muted-foreground">Registry Address</span>
-              <code className="bg-slate-100 px-3 py-1 rounded w-fit">{AGENT_INFO.registry}</code>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-muted-foreground">Agent Metadata</span>
-              <a href={AGENT_INFO.agentJson} target="_blank" className="text-blue-600 underline">
-                {AGENT_INFO.agentJson}
-              </a>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-muted-foreground">Fact Contract</span>
-              <code className="bg-slate-100 px-3 py-1 rounded w-fit">{AGENT_INFO.contract}</code>
-            </div>
-          </div>
-          <p className="text-xs text-muted-foreground">
-            Tip: run <code className="bg-slate-100 px-1 py-0.5 rounded">cast call {AGENT_INFO.registry} "tokenURI(uint256)" {AGENT_INFO.agentId}</code> to verify the metadata hash matches the URL above.
+      <div className="bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-4 text-left">
+        <div>
+          <p className="text-sm uppercase tracking-wide text-slate-400">ERC-8004 Identity</p>
+          <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
+          <p className="text-slate-300">
+            Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
           </p>
         </div>
-
-        <div className="flex flex-wrap justify-center gap-6">
-          {(Object.keys(RESOURCE_CONFIG) as ResourceTier[]).map((resource) => {
-            const config = RESOURCE_CONFIG[resource];
-            return (
-              <PaymentCard
-                key={resource}
-                tier={config.label}
-                price={config.priceLabel}
-                description={config.description}
-                features={config.notes}
-                onPayClick={() => handlePayment(resource)}
-                isPaying={isPaying === resource}
-                badgeText={config.badgeText}
-                disabled={config.disabled}
-                disabledLabel={config.disabledLabel}
-              />
-            );
-          })}
+        <div className="grid gap-3 text-sm">
+          <div className="flex flex-col">
+            <span className="text-slate-400">Registry Address</span>
+            <code className="bg-slate-800 px-3 py-1 rounded w-fit text-slate-100 border border-slate-700">{AGENT_INFO.registry}</code>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-slate-400">Agent Metadata</span>
+            <a href={AGENT_INFO.agentJson} target="_blank" className="text-blue-400 underline">
+              {AGENT_INFO.agentJson}
+            </a>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-slate-400">Fact Contract</span>
+            <code className="bg-slate-800 px-3 py-1 rounded w-fit text-slate-100 border border-slate-700">{AGENT_INFO.contract}</code>
+          </div>
         </div>
-
-        {content && (
-          <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <ContentDisplay
-              resource={RESOURCE_CONFIG[content.resource].label}
-              count={content.count}
-              source={content.source}
-              payload={content.payload}
-              paymentReceipt={content.paymentReceipt}
-              timestamp={content.timestamp}
-            />
-          </div>
-        )}
-
-        {logs.length > 0 && (
-          <div className="max-w-4xl mx-auto animate-in fade-in-from-bottom-4 duration-700">
-            <TransactionLog logs={logs} />
-          </div>
-        )}
+        <p className="text-xs text-slate-400">
+          Tip: run <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">cast call {AGENT_INFO.registry} "tokenURI(uint256)" {AGENT_INFO.agentId}</code> to verify the metadata hash matches the URL above.
+        </p>
       </div>
-    </div>
+
+      <div className="flex flex-wrap justify-center gap-6">
+        {(Object.keys(RESOURCE_CONFIG) as ResourceTier[]).map((resource) => {
+          const config = RESOURCE_CONFIG[resource];
+          return (
+            <PaymentCard
+              key={resource}
+              tier={config.label}
+              price={config.priceLabel}
+              description={config.description}
+              features={config.notes}
+              onPayClick={() => handlePayment(resource)}
+              isPaying={isPaying === resource}
+              badgeText={config.badgeText}
+              disabled={config.disabled}
+              disabledLabel={config.disabledLabel}
+            />
+          );
+        })}
+      </div>
+
+      {content && (
+        <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <ContentDisplay
+            resource={RESOURCE_CONFIG[content.resource].label}
+            count={content.count}
+            source={content.source}
+            payload={content.payload}
+            paymentReceipt={content.paymentReceipt}
+            timestamp={content.timestamp}
+          />
+        </div>
+      )}
+
+      {logs.length > 0 && (
+        <div className="max-w-4xl mx-auto animate-in fade-in-from-bottom-4 duration-700">
+          <TransactionLog logs={logs} />
+        </div>
+      )}
+    </PageShell>
   );
 }

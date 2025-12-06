@@ -26,7 +26,9 @@ export function PaymentCard({
   disabledLabel = "Coming Soon",
 }: PaymentCardProps) {
   return (
-    <Card className={`w-full max-w-sm ${disabled ? "opacity-60 pointer-events-none" : ""}`}>
+    <Card
+      className={`w-full max-w-sm bg-slate-900 border-slate-800 text-slate-100 shadow-lg ${disabled ? "opacity-60 pointer-events-none" : ""}`}
+    >
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="text-2xl">{tier}</CardTitle>
@@ -34,17 +36,17 @@ export function PaymentCard({
             {badgeText}
           </Badge>
         </div>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription className="text-slate-300">{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="text-4xl font-bold mb-4">
-          {price} <span className="text-sm text-muted-foreground">USDC</span>
+          {price} <span className="text-sm text-slate-400">USDC</span>
         </div>
         {features && features.length > 0 && (
           <ul className="space-y-2">
             {features.map((feature, index) => (
-              <li key={index} className="flex items-center text-sm">
-                <svg className="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <li key={index} className="flex items-center text-sm text-slate-200">
+                <svg className="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 {feature}
