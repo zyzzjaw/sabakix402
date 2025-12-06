@@ -75,70 +75,78 @@ const mergeSearchParams = (upstreamUrl: string, requestUrl: string) => {
 
 export function createFactHandler(config: FactConfig) {
   return async function handler(request: Request) {
-    let facilitatorInstance: ReturnType<typeof facilitator>;
-    let merchantWallet: string;
     try {
-      facilitatorInstance = ensureFacilitator();
-      merchantWallet = ensureMerchantWallet();
-    } catch (err) {
-      if (err instanceof EnvVarMissingError) {
-        return misconfiguredResponse(err.missing);
+      let facilitatorInstance: ReturnType<typeof facilitator>;
+      let merchantWallet: string;
+      try {
+        facilitatorInstance = ensureFacilitator();
+        merchantWallet = ensureMerchantWallet();
+      } catch (err) {
+        if (err instanceof EnvVarMissingError) {
+          return misconfiguredResponse(err.missing);
+        }
+        throw err;
       }
-      throw err;
-    }
 
-    const paymentData =
-      request.headers.get("x-payment") ?? request.headers.get("X-PAYMENT");
+      const paymentData =
+        request.headers.get("x-payment") ?? request.headers.get("X-PAYMENT");
 
-    const upstreamUrl = mergeSearchParams(config.upstreamUrl, request.url);
+      const upstreamUrl = mergeSearchParams(config.upstreamUrl, request.url);
 
-    const result = await settlePayment({
-      resourceUrl: upstreamUrl,
-      method: request.method,
-      paymentData,
-      payTo: merchantWallet,
-      network: avalancheFuji,
-      price: config.priceAmount, // native AVAX (wei) on Fuji
-      facilitator: facilitatorInstance,
-    });
-
-    if (result.status !== 200) {
-      const body =
-        result.responseBody && Object.keys(result.responseBody).length > 0
-          ? result.responseBody
-          : { error: "settle_failed", status: result.status, note: "empty settle body" };
-      return new Response(JSON.stringify(body), {
-        status: result.status,
-        headers: result.responseHeaders,
+      const result = await settlePayment({
+        resourceUrl: upstreamUrl,
+        method: request.method,
+        paymentData,
+        payTo: merchantWallet,
+        network: avalancheFuji,
+        price: config.priceAmount, // native AVAX (wei) on Fuji
+        facilitator: facilitatorInstance,
       });
-    }
 
-    const upstreamResponse = await fetch(upstreamUrl, {
-      headers: {
-        accept: request.headers.get("accept") || "application/json",
-      },
-      cache: "no-store",
-    });
+      if (result.status !== 200) {
+        const body =
+          result.responseBody && Object.keys(result.responseBody).length > 0
+            ? result.responseBody
+            : { error: "settle_failed", status: result.status, note: "empty settle body" };
+        return new Response(JSON.stringify(body), {
+          status: result.status,
+          headers: result.responseHeaders,
+        });
+      }
 
-    if (!upstreamResponse.ok) {
-      return Response.json(
-        {
-          error: `Upstream ${config.resource} responded with ${upstreamResponse.status}`,
+      const upstreamResponse = await fetch(upstreamUrl, {
+        headers: {
+          accept: request.headers.get("accept") || "application/json",
         },
-        { status: 502 },
+        cache: "no-store",
+      });
+
+      if (!upstreamResponse.ok) {
+        return Response.json(
+          {
+            error: `Upstream ${config.resource} responded with ${upstreamResponse.status}`,
+          },
+          { status: 502 },
+        );
+      }
+
+      const body = await upstreamResponse.text();
+      const headers = new Headers(result.responseHeaders);
+      const upstreamType = upstreamResponse.headers.get("content-type");
+      headers.set("Cache-Control", "no-store");
+      headers.set("Content-Type", upstreamType || "application/json");
+
+      return new Response(body, {
+        status: 200,
+        headers,
+      });
+    } catch (err) {
+      console.error("fact handler error", err);
+      return Response.json(
+        { error: "internal_error", message: err instanceof Error ? err.message : String(err) },
+        { status: 500 },
       );
     }
-
-    const body = await upstreamResponse.text();
-    const headers = new Headers(result.responseHeaders);
-    const upstreamType = upstreamResponse.headers.get("content-type");
-    headers.set("Cache-Control", "no-store");
-    headers.set("Content-Type", upstreamType || "application/json");
-
-    return new Response(body, {
-      status: 200,
-      headers,
-    });
   };
 }
 
