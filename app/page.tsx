@@ -10,7 +10,7 @@ import { ContentDisplay } from "@/components/content-display";
 import { TransactionLog, LogEntry } from "@/components/transaction-log";
 import { Separator } from "@/components/ui/separator";
 import { createNormalizedFetch } from "@/lib/payment";
-import { AVALANCHE_FUJI_CHAIN_ID, PAYMENT_AMOUNTS, API_ENDPOINTS } from "@/lib/constants";
+import { AVALANCHE_FUJI_CHAIN_ID, PAYMENT_AMOUNTS, API_ENDPOINTS, API_BASE_URL } from "@/lib/constants";
 
 const client = createThirdwebClient({
   clientId: process.env.NEXT_PUBLIC_THIRDWEB_CLIENT_ID!,
@@ -37,7 +37,8 @@ const RESOURCE_CONFIG: Record<ResourceTier, ResourceConfig> = {
     label: "EPS Fact Bundle",
     description: "Pay-per-fact access to Sabaki's posted EPS attestations.",
     priceLabel: "0.01",
-    endpoint: `${API_ENDPOINTS.FEED}/ICUI?period=CY2025Q3`,
+    // Point directly to a sample fact endpoint (ICUI CY2025Q3)
+    endpoint: `${API_BASE_URL || ""}/api/facts/ICUI?period=CY2025Q3`,
     price: PAYMENT_AMOUNTS.FEED.bigInt,
     notes: [
       "Returns the same JSON exposed at /api/facts/{ticker}",
