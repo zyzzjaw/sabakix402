@@ -128,9 +128,14 @@ export default function Home() {
       const response = await fetchWithPay(config.endpoint);
       const paymentReceipt = response.headers.get("x-payment-response");
 
-      const payload = await response.json();
+      let payload: unknown = null;
+      try {
+        payload = await response.json();
+      } catch {
+        // leave payload as null; handle below
+      }
 
-      if (response.status === 200) {
+      if (response.status === 200 && payload !== null) {
         updateLogStatus("Initiating", "success");
         updateLogStatus("Requesting payment authorization", "success");
         addLog("Payment successful!", "success");
@@ -149,7 +154,10 @@ export default function Home() {
       } else {
         updateLogStatus("Initiating", "error");
         updateLogStatus("Requesting payment authorization", "error");
-        const errorMsg = (payload as { error?: string; errorMessage?: string })?.errorMessage || (payload as { error?: string })?.error || "Unknown error";
+        const errorMsg =
+          (payload as { error?: string; errorMessage?: string })?.errorMessage ||
+          (payload as { error?: string })?.error ||
+          "Payment failed and no JSON body was returned";
         addLog(`Payment failed: ${errorMsg}`, "error");
       }
     } catch (error) {

@@ -40,7 +40,7 @@ export function PaymentCard({
       </CardHeader>
       <CardContent>
         <div className="text-4xl font-bold mb-4">
-          {price} <span className="text-sm text-slate-400">USDC</span>
+          {price} <span className="text-sm text-slate-400">AVAX</span>
         </div>
         {features && features.length > 0 && (
           <ul className="space-y-2">
