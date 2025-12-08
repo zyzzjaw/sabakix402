@@ -92,6 +92,7 @@ export default function Home() {
   const [content, setContent] = useState<ContentData | null>(null);
   const [logs, setLogs] = useState<LogEntry[]>([]);
   const [isPaying, setIsPaying] = useState<ResourceTier | null>(null);
+  const [devMode, setDevMode] = useState(false);
 
   useEffect(() => {
     setLogs([]);
@@ -119,14 +120,28 @@ export default function Home() {
 
     try {
       addLog(`Initiating ${config.label} payment...`, "info");
+      let response: Response;
 
-      const normalizedFetch = createNormalizedFetch(AVALANCHE_FUJI_CHAIN_ID);
-      const fetchWithPay = wrapFetchWithPayment(normalizedFetch, client, wallet, {
-        maxValue: config.price,
-      });
+      if (devMode) {
+        addLog(
+          "Dev mode enabled: skipping on-chain payment and calling endpoint with x-skip-payment: 1.",
+          "info",
+        );
+        response = await fetch(config.endpoint, {
+          headers: {
+            "x-skip-payment": "1",
+          },
+        });
+      } else {
+        const normalizedFetch = createNormalizedFetch(AVALANCHE_FUJI_CHAIN_ID);
+        const fetchWithPay = wrapFetchWithPayment(normalizedFetch, client, wallet, {
+          maxValue: config.price,
+        });
 
-      addLog("Requesting payment authorization...", "info");
-      const response = await fetchWithPay(config.endpoint);
+        addLog("Requesting payment authorization...", "info");
+        response = await fetchWithPay(config.endpoint);
+      }
+
       const paymentReceipt = response.headers.get("x-payment-response");
 
       let payload: unknown = null;
@@ -138,8 +153,12 @@ export default function Home() {
 
       if (response.status === 200 && payload !== null) {
         updateLogStatus("Initiating", "success");
-        updateLogStatus("Requesting payment authorization", "success");
-        addLog("Payment successful!", "success");
+        if (!devMode) {
+          updateLogStatus("Requesting payment authorization", "success");
+          addLog("Payment successful!", "success");
+        } else {
+          addLog("Dev mode: bundle fetched without payment.", "success");
+        }
         addLog("Payload delivered", "success");
 
         const count = Array.isArray(payload) ? payload.length : undefined;
@@ -213,9 +232,33 @@ export default function Home() {
         <p className="font-semibold">How to demo:</p>
         <ol className="list-decimal list-inside space-y-1 text-slate-300">
           <li>Connect a Fuji wallet and click the EPS Fact Bundle card to run the full x402 payment.</li>
-          <li>No wallet? Send requests with header <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is enabled via ALLOW_UNPAID_FACTS).</li>
-          <li>The JSON response is the same bundle returned at <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes, SP500Oracle proofs, payment receipt, and signature.</li>
+          <li>
+            No wallet? Send requests with header{" "}
+            <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is
+            enabled via ALLOW_UNPAID_FACTS), or toggle Dev mode below to hit the endpoint without
+            paying.
+          </li>
+          <li>
+            The JSON response is the same bundle returned at{" "}
+            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes,
+            SP500Oracle proofs, payment receipt, and signature.
+          </li>
         </ol>
+        <div className="pt-2 flex items-center gap-2 text-slate-300 text-sm">
+          <label className="inline-flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={devMode}
+              onChange={(e) => setDevMode(e.target.checked)}
+              className="h-4 w-4 rounded border-slate-600 bg-slate-900"
+            />
+            <span>
+              Dev mode: call the fact endpoint without paying (sends{" "}
+              <code className="bg-slate-100 px-1 py-0.5 rounded text-slate-900">x-skip-payment: 1</code>
+              ).
+            </span>
+          </label>
+        </div>
       </div>
 
       <Separator />
