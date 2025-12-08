@@ -353,6 +353,21 @@ export default function Home() {
           , which lets you see the broader feed of attestations and the Polymarket Mirror view. This
           x402 page focuses on a single agent endpoint that sells those facts on a pay-per-fact basis.
         </p>
+        <p className="text-slate-300">
+          To request facts for more tickers from the full feed, you can also use the CLI: set{" "}
+          <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">
+            CLI_API_BASE_URL
+          </code>{" "}
+          to this app&apos;s base URL and run{" "}
+          <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">
+            sabaki-cli fetch --resource feed
+          </code>{" "}
+          to fetch the paid fact feed (multiple tickers) or{" "}
+          <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">
+            sabaki-cli fetch --resource pm
+          </code>{" "}
+          for the Polymarket snapshot.
+        </p>
       </div>
     </PageShell>
   );
