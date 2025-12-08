@@ -155,10 +155,21 @@ export default function Home() {
       } else {
         updateLogStatus("Initiating", "error");
         updateLogStatus("Requesting payment authorization", "error");
-        const errorMsg =
+        let errorMsg =
           (payload as { error?: string; errorMessage?: string })?.errorMessage ||
           (payload as { error?: string })?.error ||
           "Payment failed and no JSON body was returned";
+
+        const lower = errorMsg.toLowerCase();
+        if (
+          lower.includes("does not have enough funds") ||
+          lower.includes("not have enough funds") ||
+          lower.includes("insufficient funds")
+        ) {
+          errorMsg +=
+            " Your wallet doesn’t have enough testnet USDC on Avalanche Fuji. Visit https://faucet.circle.com/, select Avalanche Fuji, request 1 testnet USDC, then try again.";
+        }
+
         addLog(`Payment failed: ${errorMsg}`, "error");
       }
     } catch (error) {
@@ -191,8 +202,8 @@ export default function Home() {
   return (
     <PageShell>
       <div className="text-center space-y-2">
-        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • Paid EPS Facts</h1>
-        <p className="text-slate-300">On-chain audited earnings facts, paid per request on Avalanche Fuji</p>
+        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
+        <p className="text-slate-300">Minted on ERC-8004, paid access on Avalanche Fuji</p>
         <div className="flex items-center justify-center gap-2 pt-2">
           <ConnectButton client={client} wallets={wallets} />
         </div>
@@ -203,12 +214,7 @@ export default function Home() {
         <ol className="list-decimal list-inside space-y-1 text-slate-300">
           <li>Connect a Fuji wallet and click the EPS Fact Bundle card to run the full x402 payment.</li>
           <li>No wallet? Send requests with header <code className="bg-slate-100 px-1 py-0.5 rounded">x-skip-payment: 1</code> (dev mode is enabled via ALLOW_UNPAID_FACTS).</li>
-          <li>
-            The JSON you see here is exactly what agents get from{" "}
-            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>: it includes the reported
-            EPS, the Polymarket consensus number, links back to the Fuji SP500Oracle attestation, and a payment
-            receipt + signature so anyone can verify the call was paid for.
-          </li>
+          <li>The JSON response is the same bundle returned at <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes, SP500Oracle proofs, payment receipt, and signature.</li>
         </ol>
       </div>
 
@@ -216,11 +222,10 @@ export default function Home() {
 
       <div className="bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-4 text-left">
         <div>
-          <p className="text-sm uppercase tracking-wide text-slate-400">On-chain Agent Identity (ERC-8004)</p>
+          <p className="text-sm uppercase tracking-wide text-slate-400">ERC-8004 Identity</p>
           <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
           <p className="text-slate-300">
-            This endpoint is registered as an ERC-8004 agent on Avalanche Fuji (agentId {AGENT_INFO.agentId}), so
-            anyone can look up who owns it and what it claims to do before they trust or pay it.
+            Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
           </p>
         </div>
         <div className="grid gap-3 text-sm">
