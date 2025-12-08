@@ -268,7 +268,7 @@ export default function Home() {
           <p className="text-sm uppercase tracking-wide text-slate-400">ERC-8004 Identity</p>
           <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
           <p className="text-slate-300">
-            Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
+            Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — anyone can verify registration and metadata before paying.
           </p>
         </div>
         <div className="grid gap-3 text-sm">
@@ -350,7 +350,7 @@ export default function Home() {
             https://sabaki.ai/
           </a>
           , which shows the broader feed of attestations and the Polymarket Mirror view. This x402 page
-          is a focused demo that exposes a single paid endpoint suitable for agents and judges.
+          is a focused demo that exposes a single paid endpoint suitable for agents and other clients.
         </p>
         <p className="text-slate-300">
           To call the EPS fact endpoint directly, you can hit the same URL the UI uses for this demo:
