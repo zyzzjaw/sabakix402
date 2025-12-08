@@ -21,12 +21,12 @@ const wallets = [createWallet("io.metamask")];
 type ResourceTier = "eps" | "pm";
 
 type ResourceConfig = {
-  label: string;
-  description: string;
-  priceLabel: string;
-  endpoint: string;
-  price: bigint;
-  notes: string[];
+    label: string;
+    description: string;
+    priceLabel: string;
+    endpoint: string;
+    price: bigint;
+    notes: string[];
   badgeText?: string;
   disabled?: boolean;
   disabledLabel?: string;
@@ -206,8 +206,8 @@ export default function Home() {
       <PageShell>
         <div className="flex items-center justify-center">
           <div className="text-center space-y-6 p-8 bg-slate-900/60 border border-slate-800 rounded-2xl shadow-lg max-w-xl w-full">
-            <div>
-              <h1 className="text-4xl font-bold mb-2">Sabaki x402 Demo</h1>
+          <div>
+            <h1 className="text-4xl font-bold mb-2">Sabaki x402 Demo</h1>
               <p className="text-slate-300">Pay-per-fact access on Avalanche Fuji</p>
               <p className="text-sm text-slate-400 mt-1">Connect a wallet to begin</p>
             </div>
@@ -220,10 +220,10 @@ export default function Home() {
 
   return (
     <PageShell>
-      <div className="text-center space-y-2">
-        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
-        <p className="text-slate-300">Minted on ERC-8004, paid access on Avalanche Fuji</p>
-        <div className="flex items-center justify-center gap-2 pt-2">
+        <div className="text-center space-y-2">
+        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • Paid EPS Facts</h1>
+        <p className="text-slate-300">On-chain audited earnings facts, paid per request on Avalanche Fuji</p>
+          <div className="flex items-center justify-center gap-2 pt-2">
           <ConnectButton client={client} wallets={wallets} />
         </div>
       </div>
@@ -239,9 +239,10 @@ export default function Home() {
             paying.
           </li>
           <li>
-            The JSON response is the same bundle returned at{" "}
-            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes,
-            SP500Oracle proofs, payment receipt, and signature.
+            The JSON you see here is exactly what agents get from{" "}
+            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>: it includes the reported
+            EPS, the Polymarket consensus number, links back to the Fuji SP500Oracle attestation, and a payment
+            receipt + signature so anyone can verify the call was paid for.
           </li>
         </ol>
         <div className="pt-2 flex items-center gap-2 text-slate-300 text-sm">
@@ -265,10 +266,11 @@ export default function Home() {
 
       <div className="bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-4 text-left">
         <div>
-          <p className="text-sm uppercase tracking-wide text-slate-400">ERC-8004 Identity</p>
+          <p className="text-sm uppercase tracking-wide text-slate-400">On-chain Agent Identity (ERC-8004)</p>
           <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
           <p className="text-slate-300">
-            Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
+            This endpoint is registered as an ERC-8004 agent on Avalanche Fuji (agentId {AGENT_INFO.agentId}), so
+            anyone can look up who owns it and what it claims to do before they trust or pay it.
           </p>
         </div>
         <div className="grid gap-3 text-sm">
@@ -288,48 +290,70 @@ export default function Home() {
           </div>
         </div>
         <p className="text-xs text-slate-400">
-          Tip: run <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">cast call {AGENT_INFO.registry} "tokenURI(uint256)" {AGENT_INFO.agentId}</code> to verify the metadata hash matches the URL above.
+          Tip: run{" "}
+          <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">
+            cast call {AGENT_INFO.registry} &quot;tokenURI(uint256)&quot; {AGENT_INFO.agentId} --rpc-url
+            fuji
+          </code>{" "}
+          (assuming your Foundry config sets the default Fuji RPC) to verify the metadata hash matches the URL above.
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-6">
-        {(Object.keys(RESOURCE_CONFIG) as ResourceTier[]).map((resource) => {
-          const config = RESOURCE_CONFIG[resource];
-          return (
-            <PaymentCard
-              key={resource}
-              tier={config.label}
-              price={config.priceLabel}
-              description={config.description}
-              features={config.notes}
-              onPayClick={() => handlePayment(resource)}
-              isPaying={isPaying === resource}
+        <div className="flex flex-wrap justify-center gap-6">
+          {(Object.keys(RESOURCE_CONFIG) as ResourceTier[]).map((resource) => {
+            const config = RESOURCE_CONFIG[resource];
+            return (
+              <PaymentCard
+                key={resource}
+                tier={config.label}
+                price={config.priceLabel}
+                description={config.description}
+                features={config.notes}
+                onPayClick={() => handlePayment(resource)}
+                isPaying={isPaying === resource}
               badgeText={config.badgeText}
               disabled={config.disabled}
               disabledLabel={config.disabledLabel}
+              />
+            );
+          })}
+        </div>
+
+        {content && (
+          <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <ContentDisplay
+              resource={RESOURCE_CONFIG[content.resource].label}
+              count={content.count}
+              source={content.source}
+              payload={content.payload}
+              paymentReceipt={content.paymentReceipt}
+              timestamp={content.timestamp}
             />
-          );
-        })}
+          </div>
+        )}
+
+        {logs.length > 0 && (
+          <div className="max-w-4xl mx-auto animate-in fade-in-from-bottom-4 duration-700">
+            <TransactionLog logs={logs} />
+          </div>
+        )}
+
+      <div className="max-w-4xl mx-auto bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-3 text-sm text-left">
+        <p className="text-sm uppercase tracking-wide text-slate-400">Where these facts come from</p>
+        <p className="text-slate-300">
+          Every paid EPS fact in this demo comes from the Sabaki extraction pipeline: we ingest SEC
+          filings, extract Non-GAAP EPS, join against Polymarket targets, and post attestations with
+          evidence and URL hashes to the SP500Oracle contract on Avalanche Fuji.
+        </p>
+        <p className="text-slate-300">
+          The same underlying data powers the public Sabaki dashboard at{" "}
+          <a href="https://sabaki.ai/" target="_blank" className="text-blue-400 underline">
+            https://sabaki.ai/
+          </a>
+          , which lets you see the broader feed of attestations and the Polymarket Mirror view. This
+          x402 page focuses on a single agent endpoint that sells those facts on a pay-per-fact basis.
+        </p>
       </div>
-
-      {content && (
-        <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
-          <ContentDisplay
-            resource={RESOURCE_CONFIG[content.resource].label}
-            count={content.count}
-            source={content.source}
-            payload={content.payload}
-            paymentReceipt={content.paymentReceipt}
-            timestamp={content.timestamp}
-          />
-        </div>
-      )}
-
-      {logs.length > 0 && (
-        <div className="max-w-4xl mx-auto animate-in fade-in-from-bottom-4 duration-700">
-          <TransactionLog logs={logs} />
-        </div>
-      )}
     </PageShell>
   );
 }
