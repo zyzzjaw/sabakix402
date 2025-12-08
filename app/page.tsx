@@ -21,12 +21,12 @@ const wallets = [createWallet("io.metamask")];
 type ResourceTier = "eps" | "pm";
 
 type ResourceConfig = {
-    label: string;
-    description: string;
-    priceLabel: string;
-    endpoint: string;
-    price: bigint;
-    notes: string[];
+  label: string;
+  description: string;
+  priceLabel: string;
+  endpoint: string;
+  price: bigint;
+  notes: string[];
   badgeText?: string;
   disabled?: boolean;
   disabledLabel?: string;
@@ -206,8 +206,8 @@ export default function Home() {
       <PageShell>
         <div className="flex items-center justify-center">
           <div className="text-center space-y-6 p-8 bg-slate-900/60 border border-slate-800 rounded-2xl shadow-lg max-w-xl w-full">
-          <div>
-            <h1 className="text-4xl font-bold mb-2">Sabaki x402 Demo</h1>
+            <div>
+              <h1 className="text-4xl font-bold mb-2">Sabaki x402 Demo</h1>
               <p className="text-slate-300">Pay-per-fact access on Avalanche Fuji</p>
               <p className="text-sm text-slate-400 mt-1">Connect a wallet to begin</p>
             </div>
@@ -220,10 +220,10 @@ export default function Home() {
 
   return (
     <PageShell>
-        <div className="text-center space-y-2">
-        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • Paid EPS Facts</h1>
-        <p className="text-slate-300">On-chain audited earnings facts, paid per request on Avalanche Fuji</p>
-          <div className="flex items-center justify-center gap-2 pt-2">
+      <div className="text-center space-y-2">
+        <h1 className="text-4xl font-bold">Sabaki EPS Fact Agent • x402 Paywall</h1>
+        <p className="text-slate-300">Minted on ERC-8004, paid access on Avalanche Fuji</p>
+        <div className="flex items-center justify-center gap-2 pt-2">
           <ConnectButton client={client} wallets={wallets} />
         </div>
       </div>
@@ -239,10 +239,9 @@ export default function Home() {
             paying.
           </li>
           <li>
-            The JSON you see here is exactly what agents get from{" "}
-            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>: it includes the reported
-            EPS, the Polymarket consensus number, links back to the Fuji SP500Oracle attestation, and a payment
-            receipt + signature so anyone can verify the call was paid for.
+            The JSON response is the same bundle returned at{" "}
+            <code className="bg-slate-100 px-1 py-0.5 rounded">/api/facts/[ticker]</code>, including ledger hashes,
+            SP500Oracle proofs, payment receipt, and signature.
           </li>
         </ol>
         <div className="pt-2 flex items-center gap-2 text-slate-300 text-sm">
@@ -266,11 +265,10 @@ export default function Home() {
 
       <div className="bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-4 text-left">
         <div>
-          <p className="text-sm uppercase tracking-wide text-slate-400">On-chain Agent Identity (ERC-8004)</p>
+          <p className="text-sm uppercase tracking-wide text-slate-400">ERC-8004 Identity</p>
           <h2 className="text-2xl font-semibold">Sabaki EPS Fact Agent</h2>
           <p className="text-slate-300">
-            This endpoint is registered as an ERC-8004 agent on Avalanche Fuji (agentId {AGENT_INFO.agentId}), so
-            anyone can look up who owns it and what it claims to do before they trust or pay it.
+            Registered on Avalanche Fuji (agentId {AGENT_INFO.agentId}) — judges can verify registration and metadata before paying.
           </p>
         </div>
         <div className="grid gap-3 text-sm">
@@ -299,75 +297,80 @@ export default function Home() {
         </p>
       </div>
 
-        <div className="flex flex-wrap justify-center gap-6">
-          {(Object.keys(RESOURCE_CONFIG) as ResourceTier[]).map((resource) => {
-            const config = RESOURCE_CONFIG[resource];
-            return (
-              <PaymentCard
-                key={resource}
-                tier={config.label}
-                price={config.priceLabel}
-                description={config.description}
-                features={config.notes}
-                onPayClick={() => handlePayment(resource)}
-                isPaying={isPaying === resource}
+      <div className="flex flex-wrap justify-center gap-6">
+        {(Object.keys(RESOURCE_CONFIG) as ResourceTier[]).map((resource) => {
+          const config = RESOURCE_CONFIG[resource];
+          return (
+            <PaymentCard
+              key={resource}
+              tier={config.label}
+              price={config.priceLabel}
+              description={config.description}
+              features={config.notes}
+              onPayClick={() => handlePayment(resource)}
+              isPaying={isPaying === resource}
               badgeText={config.badgeText}
               disabled={config.disabled}
               disabledLabel={config.disabledLabel}
-              />
-            );
-          })}
-        </div>
-
-        {content && (
-          <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <ContentDisplay
-              resource={RESOURCE_CONFIG[content.resource].label}
-              count={content.count}
-              source={content.source}
-              payload={content.payload}
-              paymentReceipt={content.paymentReceipt}
-              timestamp={content.timestamp}
             />
-          </div>
-        )}
+          );
+        })}
+      </div>
 
-        {logs.length > 0 && (
-          <div className="max-w-4xl mx-auto animate-in fade-in-from-bottom-4 duration-700">
-            <TransactionLog logs={logs} />
-          </div>
-        )}
+      {content && (
+        <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <ContentDisplay
+            resource={RESOURCE_CONFIG[content.resource].label}
+            count={content.count}
+            source={content.source}
+            payload={content.payload}
+            paymentReceipt={content.paymentReceipt}
+            timestamp={content.timestamp}
+          />
+        </div>
+      )}
+
+      {logs.length > 0 && (
+        <div className="max-w-4xl mx-auto animate-in fade-in-from-bottom-4 duration-700">
+          <TransactionLog logs={logs} />
+        </div>
+      )}
 
       <div className="max-w-4xl mx-auto bg-slate-900/70 border border-slate-800 rounded-xl shadow p-6 space-y-3 text-sm text-left">
         <p className="text-sm uppercase tracking-wide text-slate-400">Where these facts come from</p>
         <p className="text-slate-300">
-          Every paid EPS fact in this demo comes from the Sabaki extraction pipeline: we ingest SEC
-          filings, extract Non-GAAP EPS, join against Polymarket targets, and post attestations with
-          evidence and URL hashes to the SP500Oracle contract on Avalanche Fuji.
+          Every paid EPS fact in this demo comes from the Sabaki extraction pipeline: we watch
+          companies&apos; official earnings announcements, pull out the reported per-share earnings
+          number, line it up with the right Polymarket market, and then post an attestation (with
+          evidence and URL hashes) into the SP500Oracle contract on Avalanche Fuji.
         </p>
         <p className="text-slate-300">
           The same underlying data powers the public Sabaki dashboard at{" "}
           <a href="https://sabaki.ai/" target="_blank" className="text-blue-400 underline">
             https://sabaki.ai/
           </a>
-          , which lets you see the broader feed of attestations and the Polymarket Mirror view. This
-          x402 page focuses on a single agent endpoint that sells those facts on a pay-per-fact basis.
+          , which shows the broader feed of attestations and the Polymarket Mirror view. This x402 page
+          is a focused demo that exposes a single paid endpoint suitable for agents and judges.
         </p>
         <p className="text-slate-300">
-          To request facts for more tickers from the full feed, you can also use the CLI: set{" "}
-          <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">
-            CLI_API_BASE_URL
-          </code>{" "}
-          to this app&apos;s base URL and run{" "}
-          <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">
-            sabaki-cli fetch --resource feed
-          </code>{" "}
-          to fetch the paid fact feed (multiple tickers) or{" "}
-          <code className="bg-slate-800 px-1 py-0.5 rounded text-slate-100 border border-slate-700">
-            sabaki-cli fetch --resource pm
-          </code>{" "}
-          for the Polymarket snapshot.
+          To call the EPS fact endpoint directly, you can hit the same URL the UI uses for this demo:
         </p>
+        <pre className="bg-slate-950/70 border border-slate-800 rounded-lg p-3 text-xs text-slate-100 overflow-x-auto">
+          <code>curl -i &quot;https://facts.sabaki.ai/api/facts/ICUI?period=CY2025Q3&quot;</code>
+        </pre>
+        <p className="text-slate-300">
+          An x402-aware client (like this page, built with Thirdweb) will first see a{" "}
+          <code className="bg-slate-100 px-1 py-0.5 rounded text-slate-900">402 Payment Required</code>{" "}
+          with payment terms, send the USDC payment on Avalanche Fuji, attach the{" "}
+          <code className="bg-slate-100 px-1 py-0.5 rounded text-slate-900">X-PAYMENT</code> header, and
+          then re-request the same URL to receive the paid JSON bundle. For this hackathon build, you can
+          also bypass payment in dev mode when testing:
+        </p>
+        <pre className="bg-slate-950/70 border border-slate-800 rounded-lg p-3 text-xs text-slate-100 overflow-x-auto">
+          <code>
+            curl -i -H &quot;x-skip-payment: 1&quot; &quot;https://facts.sabaki.ai/api/facts/ICUI?period=CY2025Q3&quot;
+          </code>
+        </pre>
       </div>
     </PageShell>
   );
